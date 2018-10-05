@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header-top">
+          <div class="main-container">
+            <div class="page-header-top__wrap">
+              <a href="/" class="logo">
+                <img src="img/logo.png" alt="">
+              </a>
+              <div class="page-header__call">
+                <div>+7(4712)34-53-53</div>
+                <a href="#">Заказать звонок</a>
+              </div>
+              <div class="page-header__auth">
+                <a href="#">Войти</a>
+                <a href="#">Регистрация</a>
+              </div>
+              <div class="page-header__btn-group">
+                <a class="btn btn--wishlist" href="page-favorite.html">
+                  <svg class="icon" width="18" height="16">
+                    <use xlink:href="img/sprite-svg.svg#favorite"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--compare" href="page-compare.html">
+                  <svg class="icon" width="19" height="17">
+                    <use xlink:href="img/sprite-svg.svg#compare"></use>
+                  </svg>
+                </a>
+                <a class="btn btn-basket" href="#">
+                  <svg class="icon" width="19" height="18">
+                    <use xlink:href="img/sprite-svg.svg#basket"></use>
+                  </svg>
+                  корзина
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header-bottom">
+          <div class="main-container">
+            <nav class="mn-nav">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Оптовикам</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <form class="search-form page-header__search">
+                <input class="search-form__input" type="search" placeholder="Поиск">
+                <button class="search-form__btn">Search</button>
+              </form>
+            </nav>
+            <nav class="sn-nav">
+              <ul>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#dog-icon"></use>
+                  </svg>
+                Для собак</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#cat-icon"></use>
+                  </svg>
+                Для кошек</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#mouse-icon"></use>
+                  </svg>
+                Для грызунов</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#fish-icon"></use>
+                  </svg>
+                Для рыб</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#parrot-icon"></use>
+                  </svg>
+                Для птиц</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#drag-icon"></use>
+                  </svg>
+                Ветаптека</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <section class="checkout">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Корзина</a></li>
+              <li class="breadcrumbs__item"><span>Оформление заказа</span></li>
+            </ul>
+            <h1 class="page-title">Оформление заказа</h1>
+            <form action="" class="checkout__wrap">
+              <section class="checkout__part">
+                <h2 class="checkout__part-title">1. Способ доставки</h2>
+                <div class="field-radio">
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <span class="field-radio__name-text">Самовывоз</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <span class="field-radio__name-text">Доставка</span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="checkout__part">
+                <h2 class="checkout__part-title">2. Контактная информация</h2>
+                <div class="checkout__part-toggle">
+                  <a class="active" href="#">Физическое лицо</a>
+                  <a href="#">Юридическое лицо</a>
+                </div>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col">
+                    <label class="field-select">
+                      <div class="field-select__name">Форма собственности</div>
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>ИП</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                        </select>
+                      </div>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Вид деятельности</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Питомник" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Название компании</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Собачье-счастье" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">ИНН</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="215134635" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">ОГРН</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="245239245349" id="" name="">
+                      </span>
+                    </label>
+                    <div class="field-actions">
+                      <div class="field-actions__text">* — обязательные поля</div>
+                    </div>
+                  </div>
+                  <div class="checkout__part-col">
+                    <label class="field-text">
+                      <span class="field-text__name">КПП</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="12345234635" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">БИК Банка</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="356234523452" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Кор/счет</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="546345634564563453" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Р/счёт</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="34563456435634563" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Наименование банка</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="ПАО Сбербанк" id="" name="">
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col">
+                    <label class="field-select">
+                      <div class="field-select__name">Юридический адрес</div>
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>ИП</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                        </select>
+                      </div>
+                    </label>
+                    <div class="field-checkbox">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">Фактический адрес совпадает с юридическим</span>
+                      </label>
+                    </div>
+                    <label class="field-text">
+                      <span class="field-text__name">Физический адрес</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Питомник" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Контактное лицо</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="Собачье-счастье" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Телефон</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="215134635" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">E-mail</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="245239245349" id="" name="">
+                      </span>
+                    </label>
+                    <div class="field-actions">
+                      <div class="field-actions__text">* — обязательные поля</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="checkout__part">
+                <h2 class="checkout__part-title">2. Пункт самовывоза</h2>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col">
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>ул. Ленина 12</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="checkout__part">
+                <h2 class="checkout__part-title">4. Способ оплаты</h2>
+                <div class="field-radio">
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <span class="field-radio__name-text">Наличный расчёт</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <span class="field-radio__name-text">Онлайн-оплата</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <span class="field-radio__name-text">Банковский перевод</span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="checkout__part checkout__part--action">
+                <div class="checkout__amount">
+                  <div class="checkout__amount-price">Итого: 13 770 руб.</div>
+                  <div class="checkout__amount-unit">Товары - 5 шт.</div>
+                </div>
+                <div class="field-actions">
+                  <button class="btn btn--main">Оформить заказ</button>
+                </div>
+                <div class="field-checkbox">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                    <span class="field-checkbox__name-text">Согласен с</span>
+                    <a href="#">торговыми условиями</a>
+                  </label>
+                </div>
+              </section>
+            </form>
+          </section>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__head">
+          <div class="main-container">
+            <div class="page-footer__head-wrap">
+
+              <div class="page-footer__left">
+                <div class="page-footer__block page-footer__block--company">
+                  <h2 class="page-footer__title">Ветеринарная компания</h2>
+                  <div class="bank-cards">
+                    <img src="img/bank-logo-01.png" alt="">
+                    <img src="img/bank-logo-02.png" alt="">
+                    <img src="img/bank-logo-03.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-footer__right">
+                <div class="page-footer__block page-footer__block--list">
+                  <ul class="page-footer__list">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Получение и оплата</a></li>
+                    <li><a href="#">Компаниям</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+
+                <div class="page-footer__block page-footer__block--contacts">
+                  <div class="page-footer__contacts">
+                    <p>+7 (4712) 34-53-53</p>
+                    <p>Курск, ул. Первомайская 139в</p>
+                  </div>
+
+                  <ul class="social-links page-footer__social">
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-ok"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-fa"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <a href="#">Обратная связь</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="page-footer__subscribe">
+              <div class="footer-subscribe">
+                <p>Также вы можете подписаться на новостную рассылку</p>
+                <div class="form">
+                  <div class="fields-group">
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
+                      </span>
+                    </label>
+                    <div class="field-actions">
+                      <button class="btn btn--main">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="page-footer__bottom">
+          <div class="main-container">
+            <div class="page-footer__bottom-wrap">
+              <span>Ветком 2018</span>
+              <span>Разработано в Showbiz</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
