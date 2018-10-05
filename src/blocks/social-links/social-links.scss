@@ -1,0 +1,130 @@
+// В этом файле должны быть стили для БЭМ-блока social-links, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.social-links {
+
+  $block-name:                &;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 0 !important;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    // border: 1px solid $gray;
+    // transition: border $transition-time;
+
+    &:hover,
+    &:focus {
+
+      // border-color: #fff;
+
+      #{$block-name}__icon {
+        fill: $color-main;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      border-width: 2px;
+    }
+  }
+
+  &__item-text {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__icon {
+    fill: #1d1d1d;
+    transition: fill $transition-time;
+
+    &--instagram {
+      transform: scale(0.9);
+    }
+
+    // @media (min-width: $screen-lg) {
+    //   width: 16px;
+    //   height: 16px;
+    // }
+  }
+
+
+
+  &--dark {
+
+    #{$block-name}__item {
+      width: 22px !important;
+      height: 22px !important;
+      border-width: 1px !important;
+      border-color: $text-color;
+      margin-right: 0;
+      margin-left: 10px;
+
+      &:hover,
+      &:focus {
+        border-color: $color-main;
+
+        #{$block-name}__icon {
+          fill: $color-main;
+        }
+      }
+    }
+
+    #{$block-name}__icon {
+      fill: $text-color;
+      width: 12px !important;
+      height: 12px !important;
+    }
+  }
+
+  &--share {
+    #{$block-name}__icon {
+      &--vk {
+        fill: #4f769e;
+      }
+      &--ok {
+        fill: #fe952c;
+      }
+      &--fa {
+        fill: #3e5b94;
+      }
+    }
+
+    #{$block-name}__item {
+
+      &:hover,
+      &:focus {
+
+        #{$block-name}__icon {
+          &--vk {
+            fill: lighten(#4f769e, 15%);
+          }
+          &--ok {
+            fill: lighten(#fe952c, 15%);
+          }
+          &--fa {
+            fill: lighten(#3e5b94, 15%);
+          }
+        }
+      }
+    }
+  }
+}

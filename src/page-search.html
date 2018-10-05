@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <div class="layout-catalog">
+            <div class="layout-catalog__aside">
+              <ul class="catalog-nav">
+                <li><span>Корм для кошек</span></li>
+                <li><span>Лакомства, витамины, добавки для кошек</span></li>
+                <li><span>Наполнители для кошек</span></li>
+                <li class="active"><span>Игрушки для кошек</span>
+                  <ul>
+                    <li><a href="#">Мыши</a></li>
+                    <li><a href="#">Мячики</a></li>
+                    <li><a href="#">Развивающие</a></li>
+                    <li><a href="#">Текстиль</a></li>
+                    <li><a href="#">Дразнилки</a></li>
+                    <li><a href="#">На пружине</a></li>
+                    <li><a href="#">Указки</a></li>
+                  </ul>
+                </li>
+                <li><span>Наполнители для кошек</span></li>
+              </ul>
+              <div class="aside-filser">
+                <h5 class="aside-filser__title">Цена</h5>
+              </div>
+              <div class="aside-filser">
+                <h5 class="aside-filser__title">Вид товара</h5>
+                <div class="field-checkbox">
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="">
+                      <span class="field-checkbox__name-text">Сухой корм</span>
+                    </label>
+                  </div>
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="">
+                      <span class="field-checkbox__name-text">Лакомства</span>
+                    </label>
+                  </div>
+                  <div class="field-checkbox__input-wrap">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="">
+                      <span class="field-checkbox__name-text">Шампунь</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="layout-catalog__main">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item"><span>Поиск</span></li>
+              </ul>
+              <h1 class="page-title">Поиск</h1>
+              <div class="catalog-filter">
+                <form class="filter-wrapper">
+                  <div class="filter">
+                    <div class="filter__part filter__part--text">315 товаров</div>
+                    <div class="filter__part filter__part--sort">
+                      <label class="field-select">
+                        <div class="field-select__name">Сортировать:</div>
+                        <div class="field-select__select-wrap">
+                          <select class="field-select__select" id="" name="">
+                            <option>По популярности</option>
+                            <option>Значение 2</option>
+                            <option>Значение 3</option>
+                            <option>Значение 10</option>
+                          </select>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="filter__part filter__part--sort">
+                      <label class="field-select">
+                        <div class="field-select__name">Выводить по:</div>
+                        <div class="field-select__select-wrap">
+                          <select class="field-select__select" id="" name="">
+                            <option>По популярности</option>
+                            <option>Значение 2</option>
+                            <option>Значение 3</option>
+                            <option>Значение 10</option>
+                          </select>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="filter__part filter__part--orientation"></div>
+                  </div>
+                </form>
+              </div>
+              <form class="search-form search-form--catalog">
+                <input class="search-form__input" type="search" value="Сухой корм Pro Plan" placeholder="">
+                <button class="search-form__btn btn btn--main">Поиск</button>
+              </form>
+              <div class="catalog-cards">
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+              </div>
+              <div class="pagination">
+                <a class="pagination__nav">
+                  <svg class="icon" width="12" height="12">
+                    <use xlink:href="img/sprite-svg.svg#icon-chevron-left"></use>
+                  </svg>
+                  Назад
+                </a>
+                <a href="" class="pagination__item  pagination__item--active">1</a>
+                <a href="" class="pagination__item">2</a>
+                <a href="" class="pagination__item">3</a>
+                <a href="" class="pagination__item">4</a>
+                <a href="" class="pagination__item">5</a>
+                <a class="pagination__nav">Вперед
+                  <svg class="icon" width="12" height="12">
+                    <use xlink:href="img/sprite-svg.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <p>Текстовый блок для описания категории. Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

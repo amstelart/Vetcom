@@ -1,0 +1,123 @@
+// В этом файле должны быть стили для БЭМ-блока pets-choice, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.pets-choice {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background-color: #f7f3ed;
+  padding: 140px 0 160px;
+
+  &__wrap {
+    @include row;
+  }
+
+  &__card {
+    @include col();
+    margin-bottom: 60px;
+
+    &-body {
+      // background: #444;
+      // display: block;
+      border-radius: $border-radius;
+      padding: 40px 20px;
+      position: relative;
+
+      &:before {
+        content: "";
+        background-image: url('../img/card-fon.png');
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.15;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-name {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Rubik';
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 300;
+      position: relative;
+      z-index: 1;
+
+      span {
+        font-size: 48px;
+        font-weight: 400;
+      }
+    }
+
+    &-image {
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+    }
+
+    &--dog,
+    &--cat {
+      @include col(md, 6);
+    }
+
+    &--dog {
+      #{$block-name}__card-body {
+        background-image:linear-gradient( -51deg, rgb(116,67,183) 0%, rgb(67,72,183) 100%);
+        min-height: 268px;
+      }
+    }
+
+    &--cat {
+      #{$block-name}__card-body {
+        background-image:linear-gradient( -45deg, rgb(224,122,67) 0%, rgb(221,175,75) 100%);
+        min-height: 268px;
+      }
+    }
+
+    &--mouse,
+    &--fish,
+    &--bird {
+      @include col(md, 4);
+    }
+
+    &--mouse {
+      #{$block-name}__card-body {
+        background-image: linear-gradient(51deg, rgb(222,178,149) 0%, rgb(238,175,150) 100%);
+        min-height: 175px;
+      }
+
+      #{$block-name}__card-image {
+
+      }
+    }
+
+    &--fish {
+      #{$block-name}__card-body {
+        background-image: linear-gradient( -51deg, rgb(151,180,193) 0%, rgb(135,166,180) 100%);
+        min-height: 175px;
+      }
+
+      #{$block-name}__card-image {
+        bottom: -113px;
+        right: -20px
+      }
+    }
+
+    &--bird {
+      #{$block-name}__card-body {
+        background-image:linear-gradient( -51deg, rgb(109,202,63) 0%, rgb(60,152,62) 100%);
+        min-height: 175px;
+      }
+      #{$block-name}__card-image {
+        bottom: -48px;
+        right: 10px;
+      }
+    }
+  }
+
+}

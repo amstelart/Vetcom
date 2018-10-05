@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <section class="contacts">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><span>Контакты</span></li>
+            </ul>
+            <h1 class="page-title">Контакты</h1>
+            <div class="contacts__wrap contacts__wrap--top">
+              <div class="contacts__media">
+                <img src="img/map-image.jpg" alt="">
+              </div>
+              <div class="contacts__media">
+                <img src="img/place-image.jpg" alt="">
+              </div>
+            </div>
+            <div class="contacts__wrap">
+              <div class="contacts__col">
+                <h2>Задайте вопрос</h2>
+                <form action="" class="contacts-form">
+                  <label class="field-text">
+                    <span class="field-text__name">Имя*</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="Антон" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__name">Телефон</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="tel" placeholder="+7(951) 152 13 53" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__name">E-mail</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="antongorodecky@gmail.com" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__name">Фамилия*</span>
+                    <span class="field-text__input-wrap">
+                      <textarea class="field-text__input" type="text" placeholder="Городецкий" id="" name=""></textarea>
+                    </span>
+                  </label>
+                </form>
+              </div>
+              <div class="contacts__col">
+                <p>Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
+                <p>Наша розничная сеть состоит из 13 ветеринарных аптек и 5 зоомагазинов «МиниПиги». Зоомагазины в «классическом» понимании: наличие мелких животных, птиц, рыб, рептилий. И, естественно, все необходимое для обеспечения их нормальной жизни. В ветеринарной аптеке всегда можно приобрести то, что назначил доктор. Получить консультацию ветеринара-фармацевта; а также, рекомендацию ветеринара-практика, по решению проблем именно Вашего питомца. Профессиональный уровень сотрудников подтверждается дипломами и сертификатами производителей зооветтоваров.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
