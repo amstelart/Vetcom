@@ -62,7 +62,7 @@
               </div>
               <div class="page-header__auth">
                 <a href="#">Войти</a>
-                <a href="#">Регистрация</a>
+                <a href="page-signup--fiz.html">Регистрация</a>
               </div>
               <div class="page-header__btn-group">
                 <a class="btn btn--wishlist" href="page-favorite.html">
@@ -161,7 +161,7 @@
             <div class="contacts__wrap">
               <div class="contacts__col">
                 <h2>Задайте вопрос</h2>
-                <form action="" class="contacts-form">
+                <form action="" class="form contacts__form">
                   <label class="field-text">
                     <span class="field-text__name">Имя*</span>
                     <span class="field-text__input-wrap">
@@ -180,12 +180,23 @@
                       <input class="field-text__input" type="text" placeholder="antongorodecky@gmail.com" id="" name="">
                     </span>
                   </label>
-                  <label class="field-text">
-                    <span class="field-text__name">Фамилия*</span>
+                  <label class="field-text field-text--textarea">
+                    <span class="field-text__name">Ваше сообщение*</span>
                     <span class="field-text__input-wrap">
-                      <textarea class="field-text__input" type="text" placeholder="Городецкий" id="" name=""></textarea>
+                      <textarea class="field-text__input" rows="6" type="text" placeholder="Спасибо, за отличный магазин!"></textarea>
                     </span>
                   </label>
+                  <div class="field-actions">
+                    <button class="btn btn--block btn--main">Отправить</button>
+                    <div class="field-actions__text">* — обязательные поля</div>
+                  </div>
+                  <div class="field-checkbox">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                      <span class="field-checkbox__name-text">Пинимаю</span>
+                      <a href="#">Условия передачи информации</a>
+                    </label>
+                  </div>
                 </form>
               </div>
               <div class="contacts__col">
