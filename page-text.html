@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header-top">
+          <div class="main-container">
+            <div class="page-header-top__wrap">
+              <a href="/" class="logo">
+                <img src="img/logo.png" alt="">
+              </a>
+              <div class="page-header__call">
+                <div>+7(4712)34-53-53</div>
+                <a href="#">Заказать звонок</a>
+              </div>
+              <div class="page-header__auth">
+                <a href="#">Войти</a>
+                <a href="page-signup--fiz.html">Регистрация</a>
+              </div>
+              <div class="page-header__btn-group">
+                <a class="btn btn--wishlist" href="page-favorite.html">
+                  <svg class="icon" width="18" height="16">
+                    <use xlink:href="img/sprite-svg.svg#favorite"></use>
+                  </svg>
+                </a>
+                <a class="btn btn--compare" href="page-compare.html">
+                  <svg class="icon" width="19" height="17">
+                    <use xlink:href="img/sprite-svg.svg#compare"></use>
+                  </svg>
+                </a>
+                <a class="btn btn-basket" href="#">
+                  <svg class="icon" width="19" height="18">
+                    <use xlink:href="img/sprite-svg.svg#basket"></use>
+                  </svg>
+                  корзина
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-header-bottom">
+          <div class="main-container">
+            <nav class="mn-nav">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Оптовикам</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <form class="search-form page-header__search">
+                <input class="search-form__input" type="search" placeholder="Поиск">
+                <button class="search-form__btn">Search</button>
+              </form>
+            </nav>
+            <nav class="sn-nav">
+              <ul>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#dog-icon"></use>
+                  </svg>
+                Для собак</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#cat-icon"></use>
+                  </svg>
+                Для кошек</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#mouse-icon"></use>
+                  </svg>
+                Для грызунов</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#fish-icon"></use>
+                  </svg>
+                Для рыб</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#parrot-icon"></use>
+                  </svg>
+                Для птиц</a></li>
+                <li><a href="#">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#drag-icon"></use>
+                  </svg>
+                Ветаптека</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <div class="content-layout">
+            <div class="content-layout__header">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item"><span>Текстовая страница</span></li>
+              </ul>
+              <h1 class="page-title">Текстовая страница</h1>
+            </div>
+            <div class="content-layout__wrap">
+              <p>Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
+              <p>Наша розничная сеть состоит из 13 ветеринарных аптек и 5 зоомагазинов «МиниПиги». Зоомагазины в «классическом» понимании: наличие мелких животных, птиц, рыб, рептилий. И, естественно, все необходимое для обеспечения их нормальной жизни. В ветеринарной аптеке всегда можно приобрести то, что назначил доктор. Получить консультацию ветеринара-фармацевта; а также, рекомендацию ветеринара-практика, по решению проблем именно Вашего питомца. Профессиональный уровень сотрудников подтверждается дипломами и сертификатами производителей зооветтоваров.</p>
+              <h3>Список</h3>
+              <ul>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__head">
+          <div class="main-container">
+            <div class="page-footer__head-wrap">
+
+              <div class="page-footer__left">
+                <div class="page-footer__block page-footer__block--company">
+                  <h2 class="page-footer__title">Ветеринарная компания</h2>
+                  <div class="bank-cards">
+                    <img src="img/bank-logo-01.png" alt="">
+                    <img src="img/bank-logo-02.png" alt="">
+                    <img src="img/bank-logo-03.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-footer__right">
+                <div class="page-footer__block page-footer__block--list">
+                  <ul class="page-footer__list">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Получение и оплата</a></li>
+                    <li><a href="#">Компаниям</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+
+                <div class="page-footer__block page-footer__block--contacts">
+                  <div class="page-footer__contacts">
+                    <p>+7 (4712) 34-53-53</p>
+                    <p>Курск, ул. Первомайская 139в</p>
+                  </div>
+
+                  <ul class="social-links page-footer__social">
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-ok"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-fa"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="social-links__item">
+                        <span class="social-links__item-text">Facebook</span>
+                        <svg class="social-links__icon" width="30" height="30">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#social-icon-inst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <a href="#">Обратная связь</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="page-footer__subscribe">
+              <div class="footer-subscribe">
+                <p>Также вы можете подписаться на новостную рассылку</p>
+                <div class="form">
+                  <div class="fields-group">
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
+                      </span>
+                    </label>
+                    <div class="field-actions">
+                      <button class="btn btn--main">Подписаться</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="page-footer__bottom">
+          <div class="main-container">
+            <div class="page-footer__bottom-wrap">
+              <span>Ветком 2018</span>
+              <span>Разработано в Showbiz</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
