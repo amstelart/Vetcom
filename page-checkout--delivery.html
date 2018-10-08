@@ -65,23 +65,27 @@
                 <a href="page-signup--fiz.html">Регистрация</a>
               </div>
               <div class="page-header__btn-group">
-                <a class="btn btn--wishlist" href="page-favorite.html">
+                <a class="btn-icon btn-icon--real-btn added" href="page-favorite.html">
                   <svg class="icon" width="18" height="16">
                     <use xlink:href="img/sprite-svg.svg#favorite"></use>
                   </svg>
+                  <span class="label">2</span>
                 </a>
-                <a class="btn btn--compare" href="page-compare.html">
+                <a class="btn-icon btn-icon--real-btn" href="page-compare.html">
                   <svg class="icon" width="19" height="17">
                     <use xlink:href="img/sprite-svg.svg#compare"></use>
                   </svg>
                 </a>
-                <a class="btn btn-basket" href="#">
+              </div>
+              <a class="header-basket" href="#">
+                <span class="header-basket__wrap">
                   <svg class="icon" width="19" height="18">
                     <use xlink:href="img/sprite-svg.svg#basket"></use>
                   </svg>
                   корзина
-                </a>
-              </div>
+                </span>
+                <span class="header-basket__count">5</span>
+              </a>
             </div>
           </div>
         </div>
@@ -154,17 +158,52 @@
             <form action="" class="checkout__wrap">
               <section class="checkout__part">
                 <h2 class="checkout__part-title">1. Способ доставки</h2>
-                <div class="field-radio">
+                <div class="field-radio field-radio--inline">
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
-                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <input class="field-radio__input" checked type="radio" id="" name="demo-radio-1">
                       <span class="field-radio__name-text">Самовывоз</span>
                     </label>
                   </div>
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
-                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-1">
                       <span class="field-radio__name-text">Доставка</span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+              <section class="checkout__part">
+                <h2 class="checkout__part-title">2. Способ доставки</h2>
+                <div class="field-radio field-radio--inline">
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-2">
+                      <span class="field-radio__name-text">Почта России</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-2">
+                      <span class="field-radio__name-text">ПЭК</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-2">
+                      <span class="field-radio__name-text">Деловые линии</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-2">
+                      <span class="field-radio__name-text">DPD</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" checked type="radio" id="" name="demo-radio-2">
+                      <span class="field-radio__name-text">Транспорт ветеринарной компании</span>
                     </label>
                   </div>
                 </div>
@@ -177,116 +216,33 @@
                 </div>
                 <div class="checkout__part-wrap">
                   <div class="checkout__part-col">
-                    <label class="field-select">
-                      <div class="field-select__name">Форма собственности</div>
-                      <div class="field-select__select-wrap">
-                        <select class="field-select__select" id="" name="">
-                          <option>ИП</option>
-                          <option>Значение 2</option>
-                          <option>Значение 3</option>
-                        </select>
-                      </div>
-                    </label>
                     <label class="field-text">
-                      <span class="field-text__name">Вид деятельности</span>
+                      <span class="field-text__name">Имя*</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="Питомник" id="" name="">
+                        <input class="field-text__input" type="text" placeholder="Антон" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
-                      <span class="field-text__name">Название компании</span>
+                      <span class="field-text__name">Фамилия*</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="Собачье-счастье" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">ИНН</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="215134635" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">ОГРН</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="245239245349" id="" name="">
-                      </span>
-                    </label>
-                    <div class="field-actions">
-                      <div class="field-actions__text">* — обязательные поля</div>
-                    </div>
-                  </div>
-                  <div class="checkout__part-col">
-                    <label class="field-text">
-                      <span class="field-text__name">КПП</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="12345234635" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">БИК Банка</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="356234523452" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Кор/счет</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="546345634564563453" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Р/счёт</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="34563456435634563" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Наименование банка</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="ПАО Сбербанк" id="" name="">
-                      </span>
-                    </label>
-                  </div>
-                </div>
-                <div class="checkout__part-wrap">
-                  <div class="checkout__part-col">
-                    <label class="field-select">
-                      <div class="field-select__name">Юридический адрес</div>
-                      <div class="field-select__select-wrap">
-                        <select class="field-select__select" id="" name="">
-                          <option>ИП</option>
-                          <option>Значение 2</option>
-                          <option>Значение 3</option>
-                        </select>
-                      </div>
-                    </label>
-                    <div class="field-checkbox">
-                      <label class="field-checkbox__name">
-                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                        <span class="field-checkbox__name-text">Фактический адрес совпадает с юридическим</span>
-                      </label>
-                    </div>
-                    <label class="field-text">
-                      <span class="field-text__name">Физический адрес</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="Питомник" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Контактное лицо</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="Собачье-счастье" id="" name="">
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Телефон</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="215134635" id="" name="">
+                        <input class="field-text__input" type="text" placeholder="Городецкий" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">E-mail</span>
                       <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="antongorodecky@gmail.com" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Телефон*</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="+7(951) 152 13 53" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Желаемая дата доставки</span>
+                      <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" placeholder="245239245349" id="" name="">
                       </span>
                     </label>
@@ -294,42 +250,64 @@
                       <div class="field-actions__text">* — обязательные поля</div>
                     </div>
                   </div>
-                </div>
-              </section>
-              <section class="checkout__part">
-                <h2 class="checkout__part-title">2. Пункт самовывоза</h2>
-                <div class="checkout__part-wrap">
                   <div class="checkout__part-col">
-                    <label class="field-select">
-                      <div class="field-select__select-wrap">
-                        <select class="field-select__select" id="" name="">
-                          <option>ул. Ленина 12</option>
-                          <option>Значение 2</option>
-                          <option>Значение 3</option>>
-                        </select>
-                      </div>
+                    <label class="field-text">
+                      <span class="field-text__name">Город*</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="12345234635" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Улица*</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="356234523452" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">№ дома*</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="546345634564563453" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Квартира*</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="34563456435634563" id="" name="">
+                      </span>
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Дополнительная информация</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" placeholder="" id="" name="">
+                      </span>
                     </label>
                   </div>
                 </div>
               </section>
               <section class="checkout__part">
                 <h2 class="checkout__part-title">4. Способ оплаты</h2>
-                <div class="field-radio">
+                <div class="field-radio field-radio--inline">
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
-                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-3">
                       <span class="field-radio__name-text">Наличный расчёт</span>
                     </label>
                   </div>
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
-                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-3">
+                      <span class="field-radio__name-text">Оплата картой курьеру</span>
+                    </label>
+                  </div>
+                  <div class="field-radio__input-wrap">
+                    <label class="field-radio__name">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-3">
                       <span class="field-radio__name-text">Онлайн-оплата</span>
                     </label>
                   </div>
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
-                      <input class="field-radio__input" type="radio" id="" name="demo-radio">
+                      <input class="field-radio__input" type="radio" id="" name="demo-radio-3">
                       <span class="field-radio__name-text">Банковский перевод</span>
                     </label>
                   </div>
@@ -437,17 +415,15 @@
 
             <div class="page-footer__subscribe">
               <div class="footer-subscribe">
-                <p>Также вы можете подписаться на новостную рассылку</p>
-                <div class="form">
-                  <div class="fields-group">
-                    <label class="field-text">
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
-                      </span>
-                    </label>
-                    <div class="field-actions">
-                      <button class="btn btn--main">Подписаться</button>
-                    </div>
+                <p class="footer-subscribe__text">Также вы можете подписаться на новостную рассылку</p>
+                <div class="form footer-subscribe__form">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
+                    </span>
+                  </label>
+                  <div class="field-actions">
+                    <button class="btn btn--main">Подписаться</button>
                   </div>
                 </div>
               </div>

@@ -65,23 +65,27 @@
                 <a href="page-signup--fiz.html">Регистрация</a>
               </div>
               <div class="page-header__btn-group">
-                <a class="btn btn--wishlist" href="page-favorite.html">
+                <a class="btn-icon btn-icon--real-btn added" href="page-favorite.html">
                   <svg class="icon" width="18" height="16">
                     <use xlink:href="img/sprite-svg.svg#favorite"></use>
                   </svg>
+                  <span class="label">2</span>
                 </a>
-                <a class="btn btn--compare" href="page-compare.html">
+                <a class="btn-icon btn-icon--real-btn" href="page-compare.html">
                   <svg class="icon" width="19" height="17">
                     <use xlink:href="img/sprite-svg.svg#compare"></use>
                   </svg>
                 </a>
-                <a class="btn btn-basket" href="#">
+              </div>
+              <a class="header-basket" href="#">
+                <span class="header-basket__wrap">
                   <svg class="icon" width="19" height="18">
                     <use xlink:href="img/sprite-svg.svg#basket"></use>
                   </svg>
                   корзина
-                </a>
-              </div>
+                </span>
+                <span class="header-basket__count">5</span>
+              </a>
             </div>
           </div>
         </div>
@@ -316,17 +320,15 @@
 
             <div class="page-footer__subscribe">
               <div class="footer-subscribe">
-                <p>Также вы можете подписаться на новостную рассылку</p>
-                <div class="form">
-                  <div class="fields-group">
-                    <label class="field-text">
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
-                      </span>
-                    </label>
-                    <div class="field-actions">
-                      <button class="btn btn--main">Подписаться</button>
-                    </div>
+                <p class="footer-subscribe__text">Также вы можете подписаться на новостную рассылку</p>
+                <div class="form footer-subscribe__form">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="E-mail" id="" name="">
+                    </span>
+                  </label>
+                  <div class="field-actions">
+                    <button class="btn btn--main">Подписаться</button>
                   </div>
                 </div>
               </div>
