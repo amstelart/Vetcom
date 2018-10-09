@@ -1,0 +1,58 @@
+// В этом файле должны быть стили для БЭМ-блока error-layout, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.error-layout {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+  justify-content: center;
+
+  &__wrap {
+    @include col();
+    @include col(lg, 8);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Rubik';
+    font-weight: 600;
+  }
+
+  &__image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__color-box {
+    background: #f7f3ed;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 5px 0;
+      }
+    }
+  }
+
+  &__box {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .text-center {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+}

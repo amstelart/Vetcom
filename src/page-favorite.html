@@ -19,53 +19,42 @@
       <main class="page__main-content" role="main">
 
         <section class="">
-
-        </section>
-
-        <section class="product-section">
           <div class="main-container">
-            <div class="product-section__header">
-              <h2>Аналоги</h2>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><span>Избранное</span></li>
+            </ul>
+            <h1 class="page-title">Избранное</h1>
+            <div class="product-card__wrap">
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
             </div>
-            <div class="product-card"></div>
+            <div class="pagination">
+              <a class="pagination__nav">
+                <svg class="icon" width="12" height="12">
+                  <use xlink:href="img/sprite-svg.svg#icon-chevron-left"></use>
+                </svg>
+                Назад
+              </a>
+              <a href="" class="pagination__item  pagination__item--active">1</a>
+              <a href="" class="pagination__item">2</a>
+              <a href="" class="pagination__item">3</a>
+              <a href="" class="pagination__item">4</a>
+              <a href="" class="pagination__item">5</a>
+              <a class="pagination__nav">Вперед
+                <svg class="icon" width="12" height="12">
+                  <use xlink:href="img/sprite-svg.svg#icon-chevron-right"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </section>
-
-        <section class="product-section">
-          <div class="main-container">
-            <div class="product-section__header">
-              <h2>С этим товаром рекомендуем</h2>
-            </div>
-            <div class="product-card"></div>
-          </div>
-        </section>
-
-        <section class="product-section">
-          <div class="main-container">
-            <div class="product-section__header">
-              <h2>Последние просмотры</h2>
-            </div>
-            <div class="product-card"></div>
-          </div>
-        </section>
-
-        <!-- <div class="main-container">
-
-          <h1>Заголовок с КАКИМ ТО текстом</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h2>Заголовок с КАКИМ ТО текстом</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h3>Заголовок с КАКИМ ТО текстом</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h4>Заголовок с КАКИМ ТО текстом</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h5>Заголовок с КАКИМ ТО текстом</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h6>Заголовок с КАКИМ ТО текстом</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
-
-        </div> -->
 
       </main>
 

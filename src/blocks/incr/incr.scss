@@ -1,0 +1,32 @@
+// В этом файле должны быть стили для БЭМ-блока incr, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.incr {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  background: #077e27;
+  color: #fff;
+  align-items: center;
+
+  &__val {
+    padding: 0.5em;
+  }
+
+  &__nav {
+    padding: 0.6em 0.7em;
+    cursor: pointer;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+
+    &:hover,
+    &:focus {
+      background: darken(#077e27, 5%);
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока product-case, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-case {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-bottom: 1px solid $border-color;
+
+  &__top {
+    @include row;
+  }
+
+  &__media {
+    @include col();
+    @include col(lg, 7);
+  }
+
+  &__body {
+    @include col();
+    @include col(lg, 5);    
+  }
+
+}

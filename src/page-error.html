@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <div class="error-layout">
+            <div class="error-layout__wrap">
+              <h3 class="error-layout__title">Такой страницы не существует</h3>
+              <div class="error-layout__image">
+                <img src="img/error-page-image.jpg" alt="">
+              </div>
+              <p class="text-center">К сожалению, запрашиваемая Вами страница не найдена</p>
+              <div class="error-layout__color-box">
+                <ul>
+                  <li>Возможно, это произошло по одной из следующих причин:</li>
+                  <li>- вы ошиблись при наборе адреса страницы (URL)</li>
+                  <li>- перешли по неработающей ссылке</li>
+                  <li>- запрашиваемая вами страница удалена или её никогда не было</li>
+                </ul>
+              </div>
+              <div class="error-layout__box">
+                <p>Можно попробовать найти интересующую Вас информацию в поиске по сайту<br>
+                Перейти на <a href="index.html">главную страницу</a> или <a href="#">карту сайта</a><br>
+                Посетить основные разделы сайта: <a href="#">каталог</a>, <a href="#">о компании</a>, <a href="#">контакты</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

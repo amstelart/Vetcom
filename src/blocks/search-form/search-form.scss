@@ -16,15 +16,16 @@
     border: 0;
     background: none;
     height: 100%;
-    width: 220px;
+    width: 100%;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: $border-radius;
     border-color: $border-color;
     background-image: svg-load('../blocks/search-form/bg-img/search.svg');
-    background-size: 32px 32px;
+    background-size: 22px 22px;
     background-repeat: no-repeat;
-    background-position: 98% 50%;
+    background-position: right 10px center;
+    outline: none;
 
     &::placeholder {
       color: #131c30;

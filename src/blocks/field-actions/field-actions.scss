@@ -28,4 +28,13 @@ $line-height:                 1.375em !default;
     color: $text-color--muted;
     line-height: 1.2em;
   }
+
+  &__wrap {
+    @include row;
+  }
+
+  &__col {
+    @include col();
+    @include col(md, 6);
+  }
 }

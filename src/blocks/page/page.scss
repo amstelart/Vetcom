@@ -28,6 +28,7 @@
 
   &__content {
     flex-grow: 1;
+    padding-bottom: 90px;
   }
 
   &__footer-wrapper {
@@ -119,6 +120,7 @@ img {
     margin: 0;
     padding: 0;
     display: flex;
+    margin-right: 30px;
 
     li {
 
@@ -132,9 +134,10 @@ img {
         text-decoration: none;
         padding: 20px 11px;
         font-size: 16px;
+        transition: all $transition-time;
 
         &:hover {
-          background: #ccc;
+          background: $border-color;
         }
       }
     }
@@ -170,6 +173,8 @@ img {
         font-size: 16px;
         font-family: $font-family--headings;
         font-weight: 500;
+        border-radius: 6px;
+        transition: all $transition-time;
 
         .icon {
           width: 35px;
@@ -179,7 +184,7 @@ img {
         }
 
         &:hover {
-          background: #ccc;
+          background: darken(#f7f3ed, 3%);
         }
       }
     }
@@ -226,8 +231,15 @@ img {
   padding: 30px 0;
 
   &__header {
+
+
     h2 {
       margin-top: 0;
+      display: flex;
+
+      .more-link {
+        margin-left: auto;
+      }
     }
   }
 }
@@ -358,4 +370,22 @@ img {
       margin: 0;
     }
   }
+}
+
+.add-basket {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .btn {
+    border-radius: 0;
+    padding: 0.7em;
+  }
+  //
+  // .incr {
+  //   border-top-right-radius: 6px;
+  //   border-bottom-right-radius: 6px;
+  //   border-right: 6px;
+  // }
+
 }

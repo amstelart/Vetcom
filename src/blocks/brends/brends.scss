@@ -1,0 +1,20 @@
+// В этом файле должны быть стили для БЭМ-блока brends, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.brends {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrap {
+    @include row;
+  }
+
+  &__logo {
+    @include col();
+    @include col(lg, 3);
+    @include col(sm, 3);
+    @include col(xs, 6);
+  }
+
+}

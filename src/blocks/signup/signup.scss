@@ -1,0 +1,49 @@
+// В этом файле должны быть стили для БЭМ-блока signup, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.signup {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 45px 0 90px;
+
+  &__inner {
+    max-width: 485px;
+    border: 1px solid #e3e3e3;
+    padding: 40px 60px;
+    margin: auto;
+  }
+
+  &__header {
+    text-align: center;
+
+    .page-title {
+      margin: 0;
+    }
+  }
+
+  &__step {
+    color: $color-main;
+  }
+
+  &__checkout {
+    display: flex;
+    margin-bottom: 25px;
+
+    a {
+      text-decoration: none;
+      color: #b9b9b9;
+      border-bottom: 2px solid #b9b9b9;
+      padding: 0.6em 0.5em;
+      flex-grow: 1;
+      font-family: 'Rubik';
+
+      &.active {
+        color: #000;
+        border-color: $color-main;
+      }
+    }
+  }
+
+}

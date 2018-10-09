@@ -18,54 +18,64 @@
 
       <main class="page__main-content" role="main">
 
-        <section class="">
-
-        </section>
-
-        <section class="product-section">
-          <div class="main-container">
-            <div class="product-section__header">
-              <h2>Аналоги</h2>
+        <div class="main-container">
+          <div class="compare">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><span>Сравнение товаров</span></li>
+            </ul>
+            <h1 class="page-title">Сравнение товаров</h1>
+            <div class="mb30">
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                  <span class="field-checkbox__name-text">Скрыть одинаковые параметры</span>
+                </label>
+              </div>
             </div>
-            <div class="product-card"></div>
-          </div>
-        </section>
-
-        <section class="product-section">
-          <div class="main-container">
-            <div class="product-section__header">
-              <h2>С этим товаром рекомендуем</h2>
+            <div class="product-card__wrap mb30">
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
+              @@include('blocks/product-card/product-card.html')
             </div>
-            <div class="product-card"></div>
-          </div>
-        </section>
-
-        <section class="product-section">
-          <div class="main-container">
-            <div class="product-section__header">
-              <h2>Последние просмотры</h2>
+            <div class="compare__table">
+              <div class="compare__table-item">
+                <div class="compare__table-col">
+                  <div class="compare__table-title">Производитель</div>
+                  <div class="compare__table-wrap">
+                    <div class="compare__table-part">Royal Canin</div>
+                    <div class="compare__table-part">Royal Canin</div>
+                    <div class="compare__table-part">Royal Canin</div>
+                    <div class="compare__table-part">Royal Canin</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__table-item">
+                <div class="compare__table-col">
+                  <div class="compare__table-title">Вес</div>
+                  <div class="compare__table-wrap">
+                    <div class="compare__table-part">12 кг.</div>
+                    <div class="compare__table-part">5 кг.</div>
+                    <div class="compare__table-part">10 кг.</div>
+                    <div class="compare__table-part">11 кг.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare__table-item">
+                <div class="compare__table-col">
+                  <div class="compare__table-title">Срок годности</div>
+                  <div class="compare__table-wrap">
+                    <div class="compare__table-part">2 года</div>
+                    <div class="compare__table-part">2 года</div>
+                    <div class="compare__table-part">2 года</div>
+                    <div class="compare__table-part">2 года</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="product-card"></div>
           </div>
-        </section>
-
-        <!-- <div class="main-container">
-
-          <h1>Заголовок с КАКИМ ТО текстом</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h2>Заголовок с КАКИМ ТО текстом</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h3>Заголовок с КАКИМ ТО текстом</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h4>Заголовок с КАКИМ ТО текстом</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h5>Заголовок с КАКИМ ТО текстом</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h6>Заголовок с КАКИМ ТО текстом</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
-
-        </div> -->
+        </div>
 
       </main>
 

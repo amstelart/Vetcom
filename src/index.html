@@ -12,7 +12,7 @@
 
   <div class="page__inner">
 
-    <div class="page__content">
+    <div class="page__content pb0">
 
       @@include('blocks/page-header/page-header.html')
 
@@ -79,6 +79,86 @@
 
         <section class="product-section">
           <div class="main-container">
+            <div class="tabs tabs--carousel">
+              <ul class="tabs__links" role="tablist">
+                <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+                  <a href="#demo-tab-01" class="tabs__link" data-toggle="tab" role="tab">
+                    <svg class="icon" width="22" height="22">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#tab-icon-01"></use>
+                    </svg>
+                    Распродажа</a>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <span data-target="#demo-tab-02" class="tabs__link" data-toggle="tab" role="tab">
+                    <svg class="icon" width="21" height="21">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#tab-icon-02"></use>
+                    </svg>
+                    Хиты продаж</span>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#demo-tab-03" class="tabs__link" data-toggle="tab" role="tab">
+                    <svg class="icon" width="23" height="23">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#tab-icon-03"></use>
+                    </svg>
+                    Новинки</a>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#demo-tab-04" class="tabs__link" data-toggle="tab" role="tab">
+                    <svg class="icon" width="24" height="24">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#tab-icon-04"></use>
+                    </svg>
+                    Акции</a>
+                </li>
+              </ul>
+
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-item tabs__content-item--active" id="demo-tab-01" role="tabpanel">
+                  <div class="product-card__wrap">
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="demo-tab-02" role="tabpanel">
+                  <div class="product-card__wrap">
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="demo-tab-03" role="tabpanel">
+                  <div class="product-card__wrap">
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="demo-tab-04" role="tabpanel">
+                  <div class="product-card__wrap">
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                    @@include('blocks/product-card/product-card.html')
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-section">
+          <div class="main-container">
+            <div class="product-section__header">
+              <h2>Персональные рекомендации
+                <a href="" class="more-link">
+                  Показать еще
+                  <svg class="more-link__icon" width="7" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-chevron-right"></use></svg>
+                </a>
+              </h2>
+            </div>
             <div class="product-card__wrap">
               @@include('blocks/product-card/product-card.html')
               @@include('blocks/product-card/product-card.html')
@@ -88,16 +168,41 @@
           </div>
         </section>
 
-        <section class="product-section">
+        <section class="product-section brends">
           <div class="main-container">
             <div class="product-section__header">
-              <h2>Персональные рекомендации</h2>
+              <h2>Бренды
+                <a href="" class="more-link">
+                  Показать еще
+                  <svg class="more-link__icon" width="7" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-chevron-right"></use></svg>
+                </a>
+              </h2>
             </div>
-            <div class="product-card__wrap">
-              @@include('blocks/product-card/product-card.html')
-              @@include('blocks/product-card/product-card.html')
-              @@include('blocks/product-card/product-card.html')
-              @@include('blocks/product-card/product-card.html')
+            <div class="brends__wrap">
+              <div class="brends__logo">
+                <img src="img/brend-logo-01.jpg" alt="">
+              </div>
+              <div class="brends__logo">
+                <img src="img/brend-logo-02.jpg" alt="">
+              </div>
+              <div class="brends__logo">
+                <img src="img/brend-logo-03.jpg" alt="">
+              </div>
+              <div class="brends__logo">
+                <img src="img/brend-logo-04.jpg" alt="">
+              </div>
+              <div class="brends__logo">
+                <img src="img/brend-logo-03.jpg" alt="">
+              </div>
+              <div class="brends__logo">
+                <img src="img/brend-logo-04.jpg" alt="">
+              </div>
+              <div class="brends__logo">
+                <img src="img/brend-logo-01.jpg" alt="">
+              </div>
+              <div class="brends__logo">
+                <img src="img/brend-logo-02.jpg" alt="">
+              </div>
             </div>
           </div>
         </section>
@@ -105,16 +210,12 @@
         <section class="product-section">
           <div class="main-container">
             <div class="product-section__header">
-              <h2>Бренды</h2>
-            </div>
-            <div class="product-card"></div>
-          </div>
-        </section>
-
-        <section class="product-section">
-          <div class="main-container">
-            <div class="product-section__header">
-              <h2>Последние просмотры</h2>
+              <h2>Последние просмотры
+                <a href="" class="more-link">
+                  Показать еще
+                  <svg class="more-link__icon" width="7" height="12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-chevron-right"></use></svg>
+                </a>
+              </h2>
             </div>
             <div class="product-card__wrap">
               @@include('blocks/product-card/product-card.html')
@@ -157,24 +258,6 @@
             </div>
           </div>
         </section>
-
-        <!-- <div class="main-container">
-
-          <h1>Заголовок с КАКИМ ТО текстом</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h2>Заголовок с КАКИМ ТО текстом</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h3>Заголовок с КАКИМ ТО текстом</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h4>Заголовок с КАКИМ ТО текстом</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h5>Заголовок с КАКИМ ТО текстом</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <h6>Заголовок с КАКИМ ТО текстом</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dolor, ipsum at minima perferendis accusantium cupiditate, porro mollitia. At ipsa dolor tenetur, maxime corrupti ducimus, architecto quibusdam consequatur deleniti aliquid.</p>
-          <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
-
-        </div> -->
 
       </main>
 

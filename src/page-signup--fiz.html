@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <section class="signup">
+            <div class="signup__inner">
+              <div class="signup__header">
+                <h1 class="page-title">Регистрация</h1>
+                <p class="signup__step">Этап 1 из 2</p>
+                <div class="signup__checkout">
+                  <a class="active" href="page-signup--fiz.html">Физическое лицо</a>
+                  <a href="page-signup--ur.html">Юридическое лицо</a>
+                </div>
+              </div>
+              <form action="" class="form">
+                <label class="field-text">
+                  <span class="field-text__name">Имя*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="Антон" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Фамилия*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" placeholder="Городецкий" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">E-mail</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="antongorodecky@gmail.com" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Введите пароль*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="password" placeholder="**********" id="" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Подтвердите пароль*</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="password" placeholder="**********" id="" name="">
+                  </span>
+                </label>
+                <div class="field-actions">
+                  <button class="btn btn--main btn--block">Далее</button>
+                  <div class="field-actions__wrap">
+                    <div class="field-actions__col">
+                      <div class="field-actions__text">* — обязательные поля</div>
+                    </div>
+                    <div class="field-actions__col">
+                      <span class="field-actions__text">Уже есть аккаунт? <a href="#">Войти</a></span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

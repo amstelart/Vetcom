@@ -1,0 +1,43 @@
+// В этом файле должны быть стили для БЭМ-блока footer-subscribe, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.footer-subscribe {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__text {
+
+  }
+
+  &__form {
+    display: flex;
+    flex-grow: 1;
+
+    .field-text,
+    .field-actions {
+      margin: 0;
+      flex-grow: 1;
+      flex-basis: 50%;
+      margin-left: 20px;
+
+      .btn {
+        width: 100%;
+        padding: 0.75em 1.4em;
+      }
+    }
+
+    .field-text__input {
+      background: transparent;
+      border-color: #000;
+      color: #5e5e5e;
+
+      &::placeholder {
+        color: #5e5e5e;
+        font-size: 14px;
+      }
+    }
+  }
+}

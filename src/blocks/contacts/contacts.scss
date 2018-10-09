@@ -23,4 +23,14 @@
     @include col();
     @include col(lg, 6);
   }
+
+  &__form {
+    .field-text,
+    .field-actions {
+      max-width: 70%;
+    }
+    .field-text--textarea {
+      max-width: 100%;
+    }
+  }
 }

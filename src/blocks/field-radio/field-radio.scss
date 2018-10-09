@@ -59,7 +59,7 @@ $line-height:                 1.375em !default;
     &:before {
       content: '';
       position: absolute;
-      top: 0.1em;
+      top: 0.25em;
       left: 0;
       width: 14px;
       height: 14px;
@@ -74,7 +74,7 @@ $line-height:                 1.375em !default;
     &:after {
       content: '';
       position: absolute;
-      top: calc(0.1em + 4px);
+      top: calc(0.25em + 4px);
       left: 4px;
       width: 6px;
       height: 6px;
@@ -114,5 +114,40 @@ $line-height:                 1.375em !default;
 
   &__help-text {
     @include field-help-text;
+  }
+
+  &__name-logo {
+    display: block;
+  }
+
+  &--inline {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    #{$block-name}__input-wrap {
+      margin-top: 0.6875em;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    #{$block-name}__title {
+      display: block;
+      font-weight: 700;
+      line-height: $line-height;
+      margin-top: 0.6875em;
+      margin-right: 1.4em;
+      margin-bottom: 0.4em;
+    }
+  }
+
+  &--service {
+
+    #{$block-name}__input-wrap {
+      border: 1px solid $border-color;
+      padding: 20px;
+    }
   }
 }

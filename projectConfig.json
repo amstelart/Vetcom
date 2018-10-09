@@ -67,7 +67,19 @@
     "checkout": [],
     "news": [],
     "question": [],
-    "contacts": []
+    "contacts": [],
+    "signup": [],
+    "reviews": [],
+    "product-case": [],
+    "rate": [],
+    "details": [],
+    "error-layout": [],
+    "compare": [],
+    "btn-icon": [],
+    "footer-subscribe": [],
+    "incr": [],
+    "brends": [],
+    "more-link": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

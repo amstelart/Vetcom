@@ -52,9 +52,10 @@
     .price-pickup {
       font-size: 24px;
       font-weight: 700;
+      display: flex;
+      align-items: center;
 
       .icon {
-        display: inline-block;
         fill: $color-main;
       }
     }
@@ -77,6 +78,7 @@
   &__subs {
     display: flex;
     align-items: center;
+    font-size: 14px;
 
     .icon {
 
@@ -86,16 +88,6 @@
   &__links {
     display: flex;
     align-items: center;
-
-    a {
-      margin: 5px;
-      width: 20px;
-      height: 20px;
-
-      .icon {
-        fill: #c3c3c3;
-      }
-    }
   }
 
 }

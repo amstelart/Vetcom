@@ -6,7 +6,96 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__call {
+
+  }
+
+  &__call-num {
+
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      fill: #bcbcbc;
+    }
+  }
+
+  &__call-order {
+    color: $color-main;
+    text-decoration: none;
+  }
+
   &__hz {
     display: flex;
+  }
+
+  &__auth {
+    a {
+      padding: 0.4em 0.7em;
+    }
+  }
+
+  &__btn-group {
+    display: flex;
+
+    .btn-icon {
+      margin: 0 4px;
+      background: transparent;
+
+      .label {
+        display: none;
+      }
+
+      &.added {
+
+        .icon {
+          fill: #000;
+        }
+        .label {
+          display: block;
+        }
+      }
+    }
+
+  }
+
+  .header-basket {
+    background-color: $color-main;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none;
+
+    &__wrap {
+      padding: 0.6em 1.4em;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+
+      .icon {
+        fill: #fff;
+        align-items: center;
+        margin-right: 8px;
+      }
+    }
+
+    &__count {
+      background-color: darken($color-main, 6%);
+      flex-grow: 1;
+      height: 100%;
+      padding: 0.6em 1.4em;
+      vertical-align: middle;
+    }
+  }
+
+  &__search {
+    max-width: 195px;
   }
 }

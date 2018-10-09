@@ -1,0 +1,19 @@
+// В этом файле должны быть стили для БЭМ-блока rate, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.rate {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    width: 16px;
+    height: 16px;
+    fill: #c4c4c4;
+
+    &--color {
+      fill: #ffd821;
+    }
+  }
+
+}
