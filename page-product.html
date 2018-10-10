@@ -166,86 +166,101 @@
               <div class="product-case__media">
 
               </div>
+
               <div class="product-case__body">
-                <ul class="product-card__info">
+
+                <ul class="product-case__part product-case__part--info">
                   <li>Артикул: 1234567</li>
                   <li>Артикул производителя: 1231432516</li>
                 </ul>
-                <ul class="product-card__price">
-                  <li class="price-delivery">1050 <span class="rub">a</span></li>
-                  <li class="price-pickup">900 <span class="rub">a</span>
-                    <a class="faq-link" href="#">
+
+                <div class="product-case__part product-case__part--price">
+                  <div class="price-delivery">1050 <span class="rub">a</span></div>
+                  <div class="price-pickup">
+                    <div class="price-pickup__text">
+                      900 <span class="rub">a</span>
+                    </div>
+                    <a class="btn-icon btn-icon--single faq-link" href="#">
                       <svg class="icon" width="25" height="25">
                         <use xlink:href="img/sprite-svg.svg#question"></use>
                       </svg>
                     </a>
-                  </li>
-                </ul>
-
-                <div class="add-basket">
-                  <dutton class="btn btn--main">в корзину</dutton>
-                  <div class="incr">
-                    <div class="incr__minus incr__nav">
-                      <span>-</span>
-                    </div>
-                    <div class="incr__val">
-                      <span>2</span>
-                    </div>
-                    <div class="incr__plus incr__nav">
-                      <span>+</span>
-                    </div>
                   </div>
                 </div>
 
-                <div class="details">
-                  <div class="details__item">
-                    <div class="details__item-title">Производитель</div>
-                    <div class="details__item-content">Royal Canin</div>
+                <div class="product-case__part product-case__part--action">
+                  <div class="add-basket">
+                    <dutton class="btn btn--main">в корзину</dutton>
+                    <div class="incr">
+                      <div class="incr__minus incr__nav">
+                        <span>-</span>
+                      </div>
+                      <div class="incr__val">
+                        <span>2</span>
+                      </div>
+                      <div class="incr__plus incr__nav">
+                        <span>+</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="details__item">
-                    <div class="details__item-title">Вес</div>
-                    <div class="details__item-content">15 кг.</div>
-                  </div>
-                  <div class="details__item">
-                    <div class="details__item-title">Срок годности</div>
-                    <div class="details__item-content">2 года</div>
-                  </div>
-                  <div class="details__item">
-                    <div class="details__item-title">Кол-во на складе</div>
-                    <div class="details__item-content">10 шт.</div>
-                  </div>
-                  <div class="details__item">
-                    <div class="details__item-title">Штрих-код</div>
-                    <div class="details__item-content">21585123423</div>
-                  </div>
-                </div>
-
-                <div class="product-card__action">
                   <div class="product-card__subs">
                     <a href="#">В подписку</a>
-                    <a class="faq-link" href="#">
+                    <a class="btn-icon btn-icon--single" href="#">
                       <svg class="icon" width="25" height="25">
                         <use xlink:href="img/sprite-svg.svg#question"></use>
                       </svg>
                     </a>
                   </div>
+                </div>
 
-                  <div class="product-card__links">
-                    <a class="btn-wishlist" href="page-favorite.html">
-                      <svg class="icon" width="18" height="16">
-                        <use xlink:href="img/sprite-svg.svg#favorite"></use>
-                      </svg>
-                    </a>
-                    <a class="btn-compare" href="page-compare.html">
-                      <svg class="icon" width="19" height="17">
-                        <use xlink:href="img/sprite-svg.svg#compare"></use>
-                      </svg>
-                    </a>
+                <div class="product-case__part product-case__part--btn-group">
+                  <a class="btn-icon btn-icon--real-btn btn-icon--add-text" href="page-favorite.html">
+                    <svg class="icon" width="18" height="16">
+                      <use xlink:href="img/sprite-svg.svg#favorite"></use>
+                    </svg>
+                    <span class="btn-icon__text">Добавить в избранное</span>
+                  </a>
+                  <a class="btn-icon btn-icon--real-btn btn-icon--add-text" href="page-compare.html">
+                    <svg class="icon" width="19" height="17">
+                      <use xlink:href="img/sprite-svg.svg#compare"></use>
+                    </svg>
+                    <span class="btn-icon__text">К сравнению</span>
+                  </a>
+                </div>
+
+                <div class="product-case__part product-case__part--details">
+                  <div class="details">
+                    <div class="details__item">
+                      <div class="details__item-title">Производитель</div>
+                      <div class="details__item-content">Royal Canin</div>
+                    </div>
+                    <div class="details__item">
+                      <div class="details__item-title">Вес</div>
+                      <div class="details__item-content">15 кг.</div>
+                    </div>
+                    <div class="details__item">
+                      <div class="details__item-title">Срок годности</div>
+                      <div class="details__item-content">2 года</div>
+                    </div>
+                    <div class="details__item">
+                      <div class="details__item-title">Кол-во на складе</div>
+                      <div class="details__item-content">10 шт.</div>
+                    </div>
+                    <div class="details__item">
+                      <div class="details__item-title">Штрих-код</div>
+                      <div class="details__item-content">21585123423</div>
+                    </div>
                   </div>
+                </div>
+
+                <div class="product-case__part product-case__part--files">
+                  <a href="#">Скачать инструкцию</a>
+                  <a href="#">Скачать сертификат</a>
                 </div>
 
               </div>
             </div>
+
             <div class="tabs">
               <ul class="tabs__links" role="tablist">
                 <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
@@ -446,17 +461,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -465,8 +482,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -517,17 +534,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -536,8 +555,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -588,17 +607,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -607,8 +628,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -659,17 +680,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -678,8 +701,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -746,17 +769,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -765,8 +790,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -817,17 +842,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -836,8 +863,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -888,17 +915,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -907,8 +936,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -959,17 +988,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -978,8 +1009,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -1046,17 +1077,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -1065,8 +1098,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -1117,17 +1150,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -1136,8 +1171,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -1188,17 +1223,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -1207,8 +1244,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
@@ -1259,17 +1296,19 @@
                 <div class="product-card__inner">
                   <div class="label label--hit">Хит</div>
                   <div class="product-card__image">
-                    <img src="img/product-image.png" alt="">
+                    <a href="page-product.html">
+                      <img src="img/product-image.png" alt="">
+                    </a>
                   </div>
                   <div class="product-card__body">
-                    <h5>Сухой корм PRO PLAN Sterilised</h5>
+                    <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
                     <ul class="product-card__info">
                       <li>Артикул: 1234567</li>
                       <li>В наличии: 520 шт.</li>
                     </ul>
-                    <ul class="product-card__price">
-                      <li class="price-delivery">1050 <span class="rub">a</span></li>
-                      <li class="price-pickup">
+                    <div class="product-card__price">
+                      <div class="price-delivery">1050 <span class="rub">a</span></div>
+                      <div class="price-pickup">
                         <div class="price-pickup__text">
                           900 <span class="rub">a</span>
                         </div>
@@ -1278,8 +1317,8 @@
                             <use xlink:href="img/sprite-svg.svg#question"></use>
                           </svg>
                         </a>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="product-card__basket">
