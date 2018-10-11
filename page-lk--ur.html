@@ -65,7 +65,7 @@
                 <a class="page-header__call-order" href="#">Заказать звонок</a>
               </div>
               <div class="page-header__auth">
-                <a href="#">Войти</a>
+                <a href="#modal-login" data-toggle="modal">Войти</a>
                 <a href="page-signup--fiz.html">Регистрация</a>
               </div>
               <div class="page-header__btn-group">
@@ -110,40 +110,282 @@
                 <button class="search-form__btn">Search</button>
               </form>
             </nav>
-            <nav class="sn-nav">
-              <ul>
-                <li><a href="page-catalog.html">
-                  <svg class="icon">
-                    <use xlink:href="img/sprite-svg.svg#dog-icon"></use>
-                  </svg>
-                Для собак</a></li>
-                <li><a href="page-catalog.html">
-                  <svg class="icon">
-                    <use xlink:href="img/sprite-svg.svg#cat-icon"></use>
-                  </svg>
-                Для кошек</a></li>
-                <li><a href="page-catalog.html">
-                  <svg class="icon">
-                    <use xlink:href="img/sprite-svg.svg#mouse-icon"></use>
-                  </svg>
-                Для грызунов</a></li>
-                <li><a href="page-catalog.html">
-                  <svg class="icon">
-                    <use xlink:href="img/sprite-svg.svg#fish-icon"></use>
-                  </svg>
-                Для рыб</a></li>
-                <li><a href="page-catalog.html">
-                  <svg class="icon">
-                    <use xlink:href="img/sprite-svg.svg#parrot-icon"></use>
-                  </svg>
-                Для птиц</a></li>
-                <li><a href="page-catalog.html">
-                  <svg class="icon">
-                    <use xlink:href="img/sprite-svg.svg#drag-icon"></use>
-                  </svg>
-                Ветаптека</a></li>
+
+            <nav class="sn-nav" role="navigation">
+              <ul class="sn-nav__list">
+                <li class="sn-nav__item">
+                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#dog-icon"></use></svg>Для собак</a>
+                  <div class="sn-nav__sublist-wrapper">
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Корм</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Сухой</a></li>
+                        <li><a href="page-catalog.html">Консервы</a></li>
+                        <li><a href="page-catalog.html">Диетический</a></li>
+                        <li><a href="page-catalog.html">Кормовая добавка</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Лакомства</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Мясные, вяленые, печеные</a></li>
+                        <li><a href="page-catalog.html">Для выведения шерсти</a></li>
+                        <li><a href="page-catalog.html">Для чистки зубов</a></li>
+                        <li><a href="page-catalog.html">Сушеные натуральные</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Наполнители</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Комкующийся</a></li>
+                        <li><a href="page-catalog.html">Силикагель</a></li>
+                        <li><a href="page-catalog.html">Впитывающий</a></li>
+                        <li><a href="page-catalog.html">Минеральный</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Содержание и уход</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Когтеточки</a></li>
+                        <li><a href="page-catalog.html">Туалеты, лотки, совочки</a></li>
+                        <li><a href="page-catalog.html">Сумки, переноски</a></li>
+                        <li><a href="page-catalog.html">Лежаки и домики</a></li>
+                        <li><a href="page-catalog.html">Игрушки</a></li>
+                        <li><a href="page-catalog.html">Товары для груминга</a></li>
+                        <li><a href="page-catalog.html">Миски, кормушки, поилки</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col"></div>
+                  </div>
+                </li>
+                <li class="sn-nav__item">
+                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#cat-icon"></use></svg>Для кошек</a>
+                  <div class="sn-nav__sublist-wrapper">
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Корм</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Сухой</a></li>
+                        <li><a href="page-catalog.html">Консервы</a></li>
+                        <li><a href="page-catalog.html">Диетический</a></li>
+                        <li><a href="page-catalog.html">Кормовая добавка</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Лакомства</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Мясные, вяленые, печеные</a></li>
+                        <li><a href="page-catalog.html">Для выведения шерсти</a></li>
+                        <li><a href="page-catalog.html">Для чистки зубов</a></li>
+                        <li><a href="page-catalog.html">Сушеные натуральные</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Наполнители</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Комкующийся</a></li>
+                        <li><a href="page-catalog.html">Силикагель</a></li>
+                        <li><a href="page-catalog.html">Впитывающий</a></li>
+                        <li><a href="page-catalog.html">Минеральный</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Содержание и уход</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Когтеточки</a></li>
+                        <li><a href="page-catalog.html">Туалеты, лотки, совочки</a></li>
+                        <li><a href="page-catalog.html">Сумки, переноски</a></li>
+                        <li><a href="page-catalog.html">Лежаки и домики</a></li>
+                        <li><a href="page-catalog.html">Игрушки</a></li>
+                        <li><a href="page-catalog.html">Товары для груминга</a></li>
+                        <li><a href="page-catalog.html">Миски, кормушки, поилки</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col"></div>
+                  </div>
+                </li>
+                <li class="sn-nav__item">
+                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#mouse-icon"></use></svg>Для грызунов</a>
+                  <div class="sn-nav__sublist-wrapper">
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Корм</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Сухой</a></li>
+                        <li><a href="page-catalog.html">Консервы</a></li>
+                        <li><a href="page-catalog.html">Диетический</a></li>
+                        <li><a href="page-catalog.html">Кормовая добавка</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Лакомства</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Мясные, вяленые, печеные</a></li>
+                        <li><a href="page-catalog.html">Для выведения шерсти</a></li>
+                        <li><a href="page-catalog.html">Для чистки зубов</a></li>
+                        <li><a href="page-catalog.html">Сушеные натуральные</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Наполнители</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Комкующийся</a></li>
+                        <li><a href="page-catalog.html">Силикагель</a></li>
+                        <li><a href="page-catalog.html">Впитывающий</a></li>
+                        <li><a href="page-catalog.html">Минеральный</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Содержание и уход</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Когтеточки</a></li>
+                        <li><a href="page-catalog.html">Туалеты, лотки, совочки</a></li>
+                        <li><a href="page-catalog.html">Сумки, переноски</a></li>
+                        <li><a href="page-catalog.html">Лежаки и домики</a></li>
+                        <li><a href="page-catalog.html">Игрушки</a></li>
+                        <li><a href="page-catalog.html">Товары для груминга</a></li>
+                        <li><a href="page-catalog.html">Миски, кормушки, поилки</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col"></div>
+                  </div>
+                </li>
+                <li class="sn-nav__item">
+                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#fish-icon"></use></svg>Для рыб</a>
+                  <div class="sn-nav__sublist-wrapper">
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Корм</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Сухой</a></li>
+                        <li><a href="page-catalog.html">Консервы</a></li>
+                        <li><a href="page-catalog.html">Диетический</a></li>
+                        <li><a href="page-catalog.html">Кормовая добавка</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Лакомства</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Мясные, вяленые, печеные</a></li>
+                        <li><a href="page-catalog.html">Для выведения шерсти</a></li>
+                        <li><a href="page-catalog.html">Для чистки зубов</a></li>
+                        <li><a href="page-catalog.html">Сушеные натуральные</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Наполнители</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Комкующийся</a></li>
+                        <li><a href="page-catalog.html">Силикагель</a></li>
+                        <li><a href="page-catalog.html">Впитывающий</a></li>
+                        <li><a href="page-catalog.html">Минеральный</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Содержание и уход</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Когтеточки</a></li>
+                        <li><a href="page-catalog.html">Туалеты, лотки, совочки</a></li>
+                        <li><a href="page-catalog.html">Сумки, переноски</a></li>
+                        <li><a href="page-catalog.html">Лежаки и домики</a></li>
+                        <li><a href="page-catalog.html">Игрушки</a></li>
+                        <li><a href="page-catalog.html">Товары для груминга</a></li>
+                        <li><a href="page-catalog.html">Миски, кормушки, поилки</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col"></div>
+                  </div>
+                </li>
+                <li class="sn-nav__item">
+                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#parrot-icon"></use></svg>Для птиц</a>
+                  <div class="sn-nav__sublist-wrapper">
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Корм</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Сухой</a></li>
+                        <li><a href="page-catalog.html">Консервы</a></li>
+                        <li><a href="page-catalog.html">Диетический</a></li>
+                        <li><a href="page-catalog.html">Кормовая добавка</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Лакомства</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Мясные, вяленые, печеные</a></li>
+                        <li><a href="page-catalog.html">Для выведения шерсти</a></li>
+                        <li><a href="page-catalog.html">Для чистки зубов</a></li>
+                        <li><a href="page-catalog.html">Сушеные натуральные</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Наполнители</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Комкующийся</a></li>
+                        <li><a href="page-catalog.html">Силикагель</a></li>
+                        <li><a href="page-catalog.html">Впитывающий</a></li>
+                        <li><a href="page-catalog.html">Минеральный</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Содержание и уход</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Когтеточки</a></li>
+                        <li><a href="page-catalog.html">Туалеты, лотки, совочки</a></li>
+                        <li><a href="page-catalog.html">Сумки, переноски</a></li>
+                        <li><a href="page-catalog.html">Лежаки и домики</a></li>
+                        <li><a href="page-catalog.html">Игрушки</a></li>
+                        <li><a href="page-catalog.html">Товары для груминга</a></li>
+                        <li><a href="page-catalog.html">Миски, кормушки, поилки</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col"></div>
+                  </div>
+                </li>
+                <li class="sn-nav__item">
+                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#drag-icon"></use></svg>Ветаптека</a>
+                  <div class="sn-nav__sublist-wrapper">
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Корм</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Сухой</a></li>
+                        <li><a href="page-catalog.html">Консервы</a></li>
+                        <li><a href="page-catalog.html">Диетический</a></li>
+                        <li><a href="page-catalog.html">Кормовая добавка</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Лакомства</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Мясные, вяленые, печеные</a></li>
+                        <li><a href="page-catalog.html">Для выведения шерсти</a></li>
+                        <li><a href="page-catalog.html">Для чистки зубов</a></li>
+                        <li><a href="page-catalog.html">Сушеные натуральные</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Наполнители</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Комкующийся</a></li>
+                        <li><a href="page-catalog.html">Силикагель</a></li>
+                        <li><a href="page-catalog.html">Впитывающий</a></li>
+                        <li><a href="page-catalog.html">Минеральный</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col">
+                      <h4 class="sn-nav__sublist-title">Содержание и уход</h4>
+                      <ul class="sn-nav__sublist">
+                        <li><a href="page-catalog.html">Когтеточки</a></li>
+                        <li><a href="page-catalog.html">Туалеты, лотки, совочки</a></li>
+                        <li><a href="page-catalog.html">Сумки, переноски</a></li>
+                        <li><a href="page-catalog.html">Лежаки и домики</a></li>
+                        <li><a href="page-catalog.html">Игрушки</a></li>
+                        <li><a href="page-catalog.html">Товары для груминга</a></li>
+                        <li><a href="page-catalog.html">Миски, кормушки, поилки</a></li>
+                      </ul>
+                    </div>
+                    <div class="sn-nav__sublist-col"></div>
+                  </div>
+                </li>
               </ul>
             </nav>
+
           </div>
         </div>
       </header>
@@ -732,6 +974,73 @@
 
     </div>
 
+  </div>
+
+  <div id="modal-login" class="modal modal--login" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Вход</h4>
+        </div>
+        <div class="modal__body">
+          <form class="form" action="">
+            <label class="field-text">
+              <span class="field-text__name">E-mail</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="email" placeholder="test@test.ru" id="" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Пароль</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="password" placeholder="******" id="" name="">
+              </span>
+            </label>
+            <div class="field-actions">
+              <button class="btn btn--main btn--block">Войти</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <div class="modal__footer-links">
+            <span>или <a href="#">Зарегистрироваться</a></span>
+            <span><a href="#modal-login-2" data-toggle="modal">Забыли пароль</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-login-2" class="modal modal--login" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Забыли пароль?</h4>
+        </div>
+        <div class="modal__body">
+          <form class="form" action="">
+            <label class="field-text">
+              <span class="field-text__name">E-mail</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="email" placeholder="test@test.ru" id="" name="">
+              </span>
+            </label>
+            </label>
+            <div class="field-actions">
+              <button class="btn btn--main btn--block">Выслать пароль</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <div class="modal__footer-links">
+            <span>или <a href="#">Зарегистрироваться</a></span>
+            <span><a href="#">Забыли пароль</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="js/script.min.js"></script>
 
