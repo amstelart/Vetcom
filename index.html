@@ -81,15 +81,16 @@
                   </svg>
                 </a>
               </div>
-              <a class="header-basket" href="#">
+              <a class="header-basket" href="page-basket.html">
                 <span class="header-basket__wrap">
                   <svg class="icon" width="19" height="18">
                     <use xlink:href="img/sprite-svg.svg#basket"></use>
                   </svg>
-                  корзина
+                  <span class="header-basket__text">корзина</span>
                 </span>
                 <span class="header-basket__count">5</span>
               </a>
+              <div id="mabile-nav-toggler" class="burger mabile-nav__toggler"><span></span></div>
             </div>
           </div>
         </div>
@@ -114,7 +115,7 @@
             <nav class="sn-nav" role="navigation">
               <ul class="sn-nav__list">
                 <li class="sn-nav__item">
-                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#dog-icon"></use></svg>Для собак</a>
+                  <span class="sn-nav__pseudolink" data-main-nav-submenu-toggler><svg class="icon"><use xlink:href="img/sprite-svg.svg#dog-icon"></use></svg>Для собак</span>
                   <div class="sn-nav__sublist-wrapper">
                     <div class="sn-nav__sublist-col">
                       <h4 class="sn-nav__sublist-title">Корм</h4>
@@ -159,7 +160,7 @@
                   </div>
                 </li>
                 <li class="sn-nav__item">
-                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#cat-icon"></use></svg>Для кошек</a>
+                  <span class="sn-nav__pseudolink" data-main-nav-submenu-toggler><svg class="icon"><use xlink:href="img/sprite-svg.svg#cat-icon"></use></svg>Для кошек</span>
                   <div class="sn-nav__sublist-wrapper">
                     <div class="sn-nav__sublist-col">
                       <h4 class="sn-nav__sublist-title">Корм</h4>
@@ -204,7 +205,7 @@
                   </div>
                 </li>
                 <li class="sn-nav__item">
-                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#mouse-icon"></use></svg>Для грызунов</a>
+                  <span class="sn-nav__pseudolink" data-main-nav-submenu-toggler><svg class="icon"><use xlink:href="img/sprite-svg.svg#mouse-icon"></use></svg>Для грызунов</span>
                   <div class="sn-nav__sublist-wrapper">
                     <div class="sn-nav__sublist-col">
                       <h4 class="sn-nav__sublist-title">Лакомства</h4>
@@ -248,7 +249,7 @@
                   </div>
                 </li>
                 <li class="sn-nav__item">
-                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#fish-icon"></use></svg>Для рыб</a>
+                  <span class="sn-nav__pseudolink" data-main-nav-submenu-toggler><svg class="icon"><use xlink:href="img/sprite-svg.svg#fish-icon"></use></svg>Для рыб</span>
                   <div class="sn-nav__sublist-wrapper">
                     <div class="sn-nav__sublist-col">
                       <h4 class="sn-nav__sublist-title">Содержание и уход</h4>
@@ -292,7 +293,7 @@
                   </div>
                 </li>
                 <li class="sn-nav__item">
-                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#parrot-icon"></use></svg>Для птиц</a>
+                  <span class="sn-nav__pseudolink" data-main-nav-submenu-toggler><svg class="icon"><use xlink:href="img/sprite-svg.svg#parrot-icon"></use></svg>Для птиц</span>
                   <div class="sn-nav__sublist-wrapper">
                     <div class="sn-nav__sublist-col">
                       <h4 class="sn-nav__sublist-title">Наполнители</h4>
@@ -336,7 +337,7 @@
                   </div>
                 </li>
                 <li class="sn-nav__item">
-                  <a class="sn-nav__link" href="page-catalog.html"><svg class="icon"><use xlink:href="img/sprite-svg.svg#drag-icon"></use></svg>Ветаптека</a>
+                  <span class="sn-nav__pseudolink" data-main-nav-submenu-toggler><svg class="icon"><use xlink:href="img/sprite-svg.svg#drag-icon"></use></svg>Ветаптека</span>
                   <div class="sn-nav__sublist-wrapper">
                     <div class="sn-nav__sublist-col">
                       <h4 class="sn-nav__sublist-title">Корм</h4>
@@ -489,7 +490,7 @@
 
               <div class="tabs__content-wrapper">
                 <div class="tabs__content-item tabs__content-item--active" id="demo-tab-01" role="tabpanel">
-                  <div class="product-carousel slick-theme">
+                  <div class="product-tab-carousel slick-theme">
 
                     <div class="product-card">
                       <div class="product-card__inner">
@@ -859,7 +860,7 @@
                   </div>
                 </div>
                 <div class="tabs__content-item" id="demo-tab-02" role="tabpanel">
-                  <div class="product-carousel slick-theme">
+                  <div class="product-tab-carousel slick-theme">
 
                     <div class="product-card">
                       <div class="product-card__inner">
@@ -1229,7 +1230,7 @@
                   </div>
                 </div>
                 <div class="tabs__content-item" id="demo-tab-03" role="tabpanel">
-                  <div class="product-carousel slick-theme">
+                  <div class="product-tab-carousel slick-theme">
 
                     <div class="product-card">
                       <div class="product-card__inner">
@@ -1599,7 +1600,7 @@
                   </div>
                 </div>
                 <div class="tabs__content-item" id="demo-tab-04" role="tabpanel">
-                  <div class="product-carousel slick-theme">
+                  <div class="product-tab-carousel slick-theme">
 
                     <div class="product-card">
                       <div class="product-card__inner">
@@ -1983,7 +1984,7 @@
                 </a>
               </h2>
             </div>
-            <div class="product-card__wrap">
+            <div class="product-card__wrap product-carousel slick-theme">
 
               <div class="product-card">
                 <div class="product-card__inner">
@@ -2330,7 +2331,7 @@
                 </a>
               </h2>
             </div>
-            <div class="product-card__wrap">
+            <div class="product-card__wrap product-carousel slick-theme">
 
               <div class="product-card">
                 <div class="product-card__inner">
@@ -2628,33 +2629,35 @@
           </div>
         </section>
 
-        <section class="about" style="background-image: url('img/dog-bg.png');">
+        <section class="about">
           <div class="main-container">
             <div class="about__wrap">
-              <h2>Ветеринарная компания</h2>
-              <p>Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
-              <p>Наша розничная сеть состоит из 13 ветеринарных аптек и 5 зоомагазинов «МиниПиги». Зоомагазины в «классическом» понимании: наличие мелких животных, птиц, рыб, рептилий. И, естественно, все необходимое для обеспечения их нормальной жизни. В ветеринарной аптеке всегда можно приобрести то, что назначил доктор. Получить консультацию ветеринара-фармацевта; а также, рекомендацию ветеринара-практика, по решению проблем именно Вашего питомца. Профессиональный уровень сотрудников подтверждается дипломами и сертификатами производителей зооветтоваров.</p>
-              <div class="company-progress">
-                <div class="company-progress__item">
-                  <svg class="icon" width="74" height="74">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#clock-icon"></use>
-                  </svg>
-                  <div class="value">19</div>
-                  <div class="name">лет работы</div>
-                </div>
-                <div class="company-progress__item">
-                  <svg class="icon" width="80" height="88">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#box-icon"></use>
-                  </svg>
-                  <div class="value">10000</div>
-                  <div class="name">наименований</div>
-                </div>
-                <div class="company-progress__item">
-                  <svg class="icon" width="102" height="70">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#car-icon"></use>
-                  </svg>
-                  <div class="value">10</div>
-                  <div class="name">едениц техники</div>
+              <div class="about__inner">
+                <h2>Ветеринарная компания</h2>
+                <p>Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
+                <p>Наша розничная сеть состоит из 13 ветеринарных аптек и 5 зоомагазинов «МиниПиги». Зоомагазины в «классическом» понимании: наличие мелких животных, птиц, рыб, рептилий. И, естественно, все необходимое для обеспечения их нормальной жизни. В ветеринарной аптеке всегда можно приобрести то, что назначил доктор. Получить консультацию ветеринара-фармацевта; а также, рекомендацию ветеринара-практика, по решению проблем именно Вашего питомца. Профессиональный уровень сотрудников подтверждается дипломами и сертификатами производителей зооветтоваров.</p>
+                <div class="company-progress">
+                  <div class="company-progress__item">
+                    <svg class="icon" width="74" height="74">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#clock-icon"></use>
+                    </svg>
+                    <div class="value">19</div>
+                    <div class="name">лет работы</div>
+                  </div>
+                  <div class="company-progress__item">
+                    <svg class="icon" width="80" height="88">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#box-icon"></use>
+                    </svg>
+                    <div class="value">10000</div>
+                    <div class="name">наименований</div>
+                  </div>
+                  <div class="company-progress__item">
+                    <svg class="icon" width="102" height="70">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#car-icon"></use>
+                    </svg>
+                    <div class="value">10</div>
+                    <div class="name">едениц техники</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2786,13 +2789,13 @@
             <label class="field-text">
               <span class="field-text__name">E-mail</span>
               <span class="field-text__input-wrap">
-                <input class="field-text__input" type="email" placeholder="test@test.ru" id="" name="">
+                <input class="field-text__input" type="email" placeholder="test@test.ru" name="">
               </span>
             </label>
             <label class="field-text">
               <span class="field-text__name">Пароль</span>
               <span class="field-text__input-wrap">
-                <input class="field-text__input" type="password" placeholder="******" id="" name="">
+                <input class="field-text__input" type="password" placeholder="******" name="">
               </span>
             </label>
             <div class="field-actions">
@@ -2822,7 +2825,7 @@
             <label class="field-text">
               <span class="field-text__name">E-mail</span>
               <span class="field-text__input-wrap">
-                <input class="field-text__input" type="email" placeholder="test@test.ru" id="" name="">
+                <input class="field-text__input" type="email" placeholder="test@test.ru" name="">
               </span>
             </label>
             </label>
