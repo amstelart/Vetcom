@@ -113,7 +113,7 @@ img {
 }
 
 .mn-nav {
-  display: flex;
+  display: none;
   align-items: center;
   ul {
     list-style: none;
@@ -139,55 +139,17 @@ img {
         &:hover {
           background: $border-color;
         }
+
+        @media (max-width: ($screen-xl - 1)) {
+          font-size: 13px;
+          padding: 20px 5px;
+        }
       }
     }
   }
-}
 
-.sn-nav {
-
-  padding: 10px;
-  background: #f7f3ed;
-  margin-bottom: 20px;
-  border-radius: $border-radius;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  @media (min-width: $menu-desktop-width) {
     display: flex;
-    justify-content: space-between;
-
-    li {
-
-      &:not(:first-child) {
-        margin-left: 10px;;
-      }
-
-      a {
-        color: #000;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        padding: 20px 11px;
-        font-size: 16px;
-        font-family: $font-family--headings;
-        font-weight: 500;
-        border-radius: 6px;
-        transition: all $transition-time;
-
-        .icon {
-          width: 35px;
-          height: 35px;
-          fill: #13b135;
-          margin-right: 10px;
-        }
-
-        &:hover {
-          background: darken(#f7f3ed, 3%);
-        }
-      }
-    }
   }
 }
 
@@ -206,21 +168,21 @@ img {
   }
 }
 
-.footer-subscribe {
-  border-top: 1px solid #ccbca6;
-  min-width: 877px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px 0;
-}
-
 .about {
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
   padding: 20px 0;
 
+  @media (min-width: $menu-desktop-width) {
+    background-image: url('../img/dog-bg.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 45%;
+  }
+
   &__wrap {
+    @include row;
+  }
+
+  &__inner {
     @include col();
     @include col(lg, 7);
   }
@@ -230,11 +192,16 @@ img {
   border-bottom: 1px solid #dbdbdb;
   padding: 30px 0;
 
-  &__header {
+  &:last-child {
+    border-bottom: none;
+  }
 
+  &__header {
+    margin-top: 20px;
+    margin-bottom: 40px;
 
     h2 {
-      margin-top: 0;
+      margin: 0;
       display: flex;
 
       .more-link {
@@ -254,25 +221,23 @@ img {
   }
 }
 
-.layout-catalog {
-  @include row;
-
-  &__aside {
-    @include col();
-    @include col(lg, 3);
-  }
-  &__main {
-    @include col();
-    @include col(lg, 9);
-  }
-}
-
 .catalog-cards {
   @include row;
 
   .product-card {
     @include col();
-    @include col(lg, 4);
+    @include col(sm, 6);
+    @include col(md, 4);
+    @include col(lg, 6);
+    @include col(xl, 4);
+  }
+
+  &--inline {
+    .product-card {
+      @include col();
+      @include col(lg, 12);
+      @include col(xl, 12);
+    }
   }
 }
 
@@ -342,14 +307,6 @@ img {
   margin-bottom: 1em;
 }
 
-.filter {
-  display: flex;
-
-  &__part {
-    margin-right: 30px;
-  }
-}
-
 .price-category {
   background: #ebeef2;
   padding: 30px;
@@ -388,4 +345,25 @@ img {
   //   border-right: 6px;
   // }
 
+}
+
+.price-delivery {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price-pickup {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+
+  .btn-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon {
+    fill: $color-main;
+  }
 }

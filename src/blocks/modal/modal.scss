@@ -46,7 +46,7 @@ $z-index-modal:               100 !default;
     height: 100%;
 
     @media (min-width: $screen-lg) {
-      width: 600px;
+      width: 480px;
       height: auto;
 
       #{$block-name}--open & {
@@ -63,26 +63,31 @@ $z-index-modal:               100 !default;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
+    padding: 30px 50px;
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 5px 10px 0 10px;
     flex-shrink: 0;
   }
 
   &__title {
-    margin-top: ($line-height / 2);
-    margin-bottom: ($line-height / 2);
+    margin-top: 0;
+    // margin-top: ($line-height / 2);
+    margin-bottom: ($line-height / 4);
     font-size: $font-size--h4;
     line-height: 1.4;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'Rubik';
+    text-align: center;
+    font-size: 36px;
     color: currentColor;
   }
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 5px;
-    right: 5px;
+    top: 20px;
+    right: 20px;
   }
 
   &__body {
@@ -93,6 +98,12 @@ $z-index-modal:               100 !default;
   &__footer {
     padding: 10px;
     flex-shrink: 0;
+  }
+
+  &__footer-links {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__backdrop {

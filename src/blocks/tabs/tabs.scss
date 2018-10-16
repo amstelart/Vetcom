@@ -94,12 +94,23 @@ $field-padding-horizontal:    0.7em !default;
   }
 
   &--carousel {
+    .tabs__content-item {
+      display: block !important;
+      height: 0px;
+      overflow: hidden;
+    }
+
+    .tabs__content-item--active {
+      display: block !important;
+      height: auto;
+      overflow: visible;
+    }
 
     margin-top: 0;
 
     #{$block-name}__links {
       margin-bottom: 60px;
-      margin-top: -75px;
+      margin-top: -78px;
       // border-left: 1px solid #d9d9d9;
       // border-top: 1px solid #d9d9d9;
       // border-right: 1px solid #d9d9d9;

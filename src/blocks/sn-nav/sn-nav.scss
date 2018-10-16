@@ -1,0 +1,152 @@
+// В этом файле должны быть стили для БЭМ-блока sn-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sn-nav {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #f7f3ed;
+  margin-bottom: 20px;
+  border-radius: $border-radius $border-radius 0 0;
+  position: relative;
+  display: none;
+
+  &__list {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+    flex-grow: 1;
+    // &:not(:first-child) {
+    //   margin-left: 10px;
+    // }
+
+    &:first-child {
+
+      #{$block-name}__link {
+        border-radius: $border-radius 0 0 0;
+      }
+    }
+
+    &:last-child {
+      #{$block-name}__link {
+        border-radius: 0 $border-radius 0 0;
+      }
+    }
+
+  }
+
+  &__link,
+  &__pseudolink {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-family: $font-family--headings;
+    font-weight: 500;
+    transition: all $transition-time;
+    cursor: pointer;
+
+    .icon {
+      width: 35px;
+      height: 35px;
+      fill: #13b135;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background: #d9e1ec;
+      color: #00519f;
+
+      .icon {
+        fill: #00519f;
+      }
+    }
+
+    @media (max-width: ($screen-xl - 1)) {
+      font-size: 14px;
+    }
+  }
+
+  &__sublist-wrapper {
+
+    background: #d9e1ec;
+    padding: 30px 40px 60px 40px;
+    flex-wrap: wrap;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 0;
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: opacity $transition-time;
+
+    // stylelint-disable  max-nesting-depth
+    #{$block-name}__item--show-child > & {
+      display: flex;
+      height: auto;
+      overflow: visible;
+      opacity: 1;
+    }
+
+  }
+
+  // #{$block-name}__item:hover &
+
+  &__sublist-col {
+    @include col();
+    @include col(lg, 3);
+  }
+
+  &__sublist-title {
+    font-size: 16px;
+    color: #00519f;
+    text-transform: uppercase;
+
+    @media (max-width: ($screen-xl - 1)) {
+      font-size: 14px;
+    }
+  }
+
+  &__sublist {
+    list-style: none;
+    padding: 0;
+    display: block;
+
+    li {
+      margin: 5px 0;
+
+      @media (max-width: ($screen-xl - 1)) {
+        margin: 3px 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 3px 0;
+
+      @media (max-width: ($screen-xl - 1)) {
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+  }
+
+  @media (min-width: $menu-desktop-width) {
+    display: block;
+  }
+}

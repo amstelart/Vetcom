@@ -71,12 +71,12 @@
                 <li class="breadcrumbs__item"><span>Товары для кошек</span></li>
               </ul>
               <h1 class="page-title">Товары для кошек</h1>
-              <div class="catalog-filter">
+              <div class="catalog-filter mb60">
                 <form class="filter-wrapper">
-                  <div class="filter">
+                  <div class="filter filter--catalog">
                     <div class="filter__part filter__part--text">315 товаров</div>
                     <div class="filter__part filter__part--sort">
-                      <label class="field-select">
+                      <label class="field-select field-select--inline field-select--filter">
                         <div class="field-select__name">Сортировать:</div>
                         <div class="field-select__select-wrap">
                           <select class="field-select__select" id="" name="">
@@ -89,14 +89,13 @@
                       </label>
                     </div>
                     <div class="filter__part filter__part--sort">
-                      <label class="field-select">
+                      <label class="field-select field-select--inline field-select--filter">
                         <div class="field-select__name">Выводить по:</div>
                         <div class="field-select__select-wrap">
                           <select class="field-select__select" id="" name="">
-                            <option>По популярности</option>
-                            <option>Значение 2</option>
-                            <option>Значение 3</option>
-                            <option>Значение 10</option>
+                            <option>9 товаров</option>
+                            <option>18 товаров</option>
+                            <option>36 товаров</option>
                           </select>
                         </div>
                       </label>
@@ -134,6 +133,7 @@
 
   </div>
 
+  @@include('blocks/modal/modal.html')
   @@include('_include/page_bottom.html')
 </body>
 </html>

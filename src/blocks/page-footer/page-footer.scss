@@ -18,34 +18,46 @@
 
   &__head-wrap {
     @include row;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
   }
 
   &__left {
     @include col()
-    @include col(lg, 6)
+    @include col(lg, 5)
   }
 
   &__right {
     @include col();
-    @include col(lg, 6);
+    @include col(lg, 7);
     @include row;
 
     #{$block-name}__block {
-      min-width: 50%;
-      flex-basis: 50%;
+      @include col();
+      @include col(md, 6);
     }
+  }
+
+  &__block {
+    margin-bottom: 20px;
   }
 
   &__title {
     margin: 0 0 20px 0;
-    padding: 15px 0 15px 60px;
-    font-size: 18px;
+    padding: 15px 0 15px 50px;
+    font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
     background-image: url('../img/med-logo.png');
     background-repeat: no-repeat;
     background-position: left top;
+
+    @media (min-width: $screen-xl) {
+      font-size: 18px;
+    }
   }
 
   &__bottom {
@@ -69,13 +81,27 @@
     padding: 0;
     margin: 0;
 
+    @media (min-width: $screen-lg) {
+      margin-top: 8px;
+    }
+
     li {
-      margin-bottom: 20px;
+
+      margin-bottom: 6px;
+
+      @media (min-width: $screen-xl) {
+        margin-bottom: 20px;
+      }
     }
 
     a {
       color: inherit;
       text-decoration: none;
+      font-size: 14px;
+
+      @media (min-width: $screen-xl) {
+        font-size: 16px;
+      }
 
       &:hover {
         color: $color-main;
@@ -84,10 +110,20 @@
   }
 
   &__contacts {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    @media (min-width: $screen-xl) {
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
   }
 
   &__social {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 35px;
+    }
   }
 }

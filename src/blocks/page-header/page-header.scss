@@ -7,7 +7,11 @@
   $block-name:                &; // #{$block-name}__element
 
   &__call {
+    display: none;
 
+    @media (min-width: $menu-desktop-width) {
+      display: block;
+    }
   }
 
   &__call-num {
@@ -27,20 +31,31 @@
   &__call-order {
     color: $color-main;
     text-decoration: none;
-  }
-
-  &__hz {
-    display: flex;
+    font-size: 14px;
   }
 
   &__auth {
+    display: none;
+
     a {
       padding: 0.4em 0.7em;
+    }
+
+    @media (max-width: ($screen-xl - 1)) {
+      font-size: 13px;
+
+      a {
+        padding: 0.4em 0.4em;
+      }
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      display: block;
     }
   }
 
   &__btn-group {
-    display: flex;
+    display: none;
 
     .btn-icon {
       margin: 0 4px;
@@ -61,17 +76,21 @@
       }
     }
 
+    @media (min-width: $menu-desktop-width) {
+      display: flex;
+    }
+
   }
 
   .header-basket {
     background-color: $color-main;
     color: #fff;
-    display: flex;
     align-items: center;
     padding: 0;
     border-radius: 6px;
     overflow: hidden;
     text-decoration: none;
+    display: none;
 
     &__wrap {
       padding: 0.6em 1.4em;
@@ -79,10 +98,25 @@
       align-items: center;
       text-transform: uppercase;
 
+      @media (max-width: ($screen-xl - 1)) {
+        padding: 0.6em 1em;
+      }
+
       .icon {
         fill: #fff;
         align-items: center;
         margin-right: 8px;
+
+        @media (max-width: ($screen-xl - 1)) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__text {
+
+      @media (max-width: ($screen-xl - 1)) {
+        display: none;
       }
     }
 
@@ -92,6 +126,10 @@
       height: 100%;
       padding: 0.6em 1.4em;
       vertical-align: middle;
+    }
+    
+    @media (min-width: $menu-desktop-width) {
+      display: flex;
     }
   }
 

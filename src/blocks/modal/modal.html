@@ -27,3 +27,70 @@
 </div>
 
 -->
+
+<div id="modal-login" class="modal modal--login" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Вход</h4>
+      </div>
+      <div class="modal__body">
+        <form class="form" action="">
+          <label class="field-text">
+            <span class="field-text__name">E-mail</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="email" placeholder="test@test.ru" name="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Пароль</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="password" placeholder="******" name="">
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main btn--block">Войти</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal__footer">
+        <div class="modal__footer-links">
+          <span>или <a href="#">Зарегистрироваться</a></span>
+          <span><a href="#modal-login-2" data-toggle="modal">Забыли пароль</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-login-2" class="modal modal--login" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Забыли пароль?</h4>
+      </div>
+      <div class="modal__body">
+        <form class="form" action="">
+          <label class="field-text">
+            <span class="field-text__name">E-mail</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="email" placeholder="test@test.ru" name="">
+            </span>
+          </label>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main btn--block">Выслать пароль</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal__footer">
+        <div class="modal__footer-links">
+          <span>или <a href="#">Зарегистрироваться</a></span>
+          <span><a href="#">Забыли пароль</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

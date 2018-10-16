@@ -6,27 +6,43 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  border-top: 1px solid #ccbca6;
   display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  width: 100%;
+
+  @media (min-width: $screen-xl) {
+    width: 877px;
+  }
 
   &__text {
-
+    margin-right: 20px;
   }
 
   &__form {
-    display: flex;
-    flex-grow: 1;
+    @include row;
+    align-items: center;
 
     .field-text,
     .field-actions {
-      margin: 0;
-      flex-grow: 1;
-      flex-basis: 50%;
-      margin-left: 20px;
+      margin: 0 0 20px 0;
+      @include col();
+      @include col(md, 6);
 
       .btn {
         width: 100%;
         padding: 0.75em 1.4em;
+        margin: 0;
       }
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 0;
+      }
+    }
+
+    .field-actions {
+      // margin-left: 20px;
     }
 
     .field-text__input {

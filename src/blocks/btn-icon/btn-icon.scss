@@ -8,15 +8,6 @@
 
   position: relative;
 
-  &__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-
   svg {
     fill: #c3c3c3;
     transition: fill $transition-time;
@@ -58,42 +49,6 @@
     }
   }
 
-  &--blue-kebab {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 16px;
-    width: 6px;
-
-    &:before {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background-color: $color-main;
-      box-shadow: 0 -7px 0 $color-main, 0 7px 0 $color-main;
-    }
-  }
-
-  &--kebab {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 16px;
-    width: 6px;
-
-    &:before {
-      content: '';
-      display: block;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background-color: currentColor;
-      box-shadow: 0 -7px 0 currentColor, 0 7px 0 currentColor;
-    }
-  }
-
   &--single {
     display: flex;
     justify-content: center;
@@ -121,29 +76,12 @@
     outline: none;
     color: currentColor;
     cursor: pointer;
-
-    &:not(:first-child):not(:last-child) {
-      border-radius: 0;
-      border-right: 0;
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      border-right: 0;
-    }
-
-    &:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
   }
 
   &--add-text {
     min-width: 40px;
+    height: 25px;
     width: auto;
-    border: 1px solid $gray-lightest !important;
-    border-radius: $border-radius !important;
 
     svg {
       width: 22px;
@@ -153,14 +91,12 @@
     #{$block-name}__text {
       display: none;
       position: static;
-      width: 120px;
       height: 40px;
       line-height: 40px;
       text-align: center;
       font-weight: 500;
       font-size: $font-size--small;
       white-space: nowrap;
-      border-left: 1px solid $gray-lightest;
 
       @media (min-width: $screen-xl) {
         display: block;

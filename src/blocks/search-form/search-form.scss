@@ -59,7 +59,10 @@
 
     #{$block-name}__btn {
       display: block;
-      min-width: 224px;
+
+      @media (min-width: $screen-md) {
+        min-width: 224px;
+      }
     }
   }
 }

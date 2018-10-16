@@ -144,10 +144,8 @@ $line-height:                 1.375em !default;
   }
 
   &--service {
-
-    #{$block-name}__input-wrap {
-      border: 1px solid $border-color;
-      padding: 20px;
+    #{$block-name}__name {
+      border: 1px solid #ccc;
     }
   }
 }

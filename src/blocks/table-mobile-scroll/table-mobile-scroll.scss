@@ -47,4 +47,8 @@ $border-color:                hsl(0, 0%, 60%) !default;
     border-bottom: 1px solid $border-color;
     caption-side: top;
   }
+
+  &--basket {
+    border-color: transparent;
+  }
 }

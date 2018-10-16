@@ -1,0 +1,41 @@
+// В этом файле должны быть стили для БЭМ-блока layout-catalog, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.layout-catalog {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+
+  &__aside {
+    @include col();
+    @include col(lg, 3);
+    display: none;
+
+    @media (min-width: $menu-desktop-width) {
+      display: block;
+    }
+  }
+
+  &__main {
+    @include col();
+    @include col(lg, 9);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    .page-title {
+      margin: 0;
+    }
+
+    .catalog-filter {
+      margin-left: auto;
+    }
+  }
+}

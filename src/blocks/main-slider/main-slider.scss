@@ -1,0 +1,45 @@
+// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &.slick-theme {
+
+    .slick-arrow {
+      background: transparent;
+      z-index: 2;
+    }
+
+    .slick-prev {
+      left: 45px;
+    }
+
+    .slick-next {
+      right: 45px;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+
+    li {
+      button {
+        &:before {
+          background: #fff;
+        }
+      }
+
+      &.slick-active {
+        button {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+
+}

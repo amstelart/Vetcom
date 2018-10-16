@@ -90,4 +90,24 @@ $border-radius:               3px !default;
       border-color: $color-main;
     }
   }
+
+  &--gray {
+    color: #fff;
+    background-color: #adadad;
+    border: 1px solid #adadad;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: darken(#adadad, 10%);
+      border-color: darken(#adadad, 12%);
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
 }

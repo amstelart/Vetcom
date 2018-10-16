@@ -34,4 +34,18 @@ $line-height:                 1.375em !default;
     line-height: $line-height;
     color: currentColor;
   }
+
+  &--basket-action {
+
+    .btn {
+      min-width: 225px;
+    }
+
+    .btn + .btn {
+      margin-left: 10px;
+    }
+    .field-checkbox {
+      margin-top: 20px;
+    }
+  }
 }

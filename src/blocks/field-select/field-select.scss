@@ -63,4 +63,28 @@ $border-radius:               6px;
   &__help-text {
     @include field-help-text;
   }
+
+  &--inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    #{$block-name}__name {
+      margin-right: 15px;
+    }
+  }
+
+  &--filter {
+
+    #{$block-name}__name {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    #{$block-name}__select {
+      background-color: #fff;
+      min-width: 195px;
+      font-size: 14px;
+    }
+  }
 }

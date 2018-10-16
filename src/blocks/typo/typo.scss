@@ -136,6 +136,7 @@ address,
 figure {
   margin-top: ($line-height / 2);
   margin-bottom: ($line-height / 2);
+  line-height: ($line-height * 1.3);
 }
 
 address {
@@ -268,6 +269,16 @@ a {
   margin-bottom: 30px;
 }
 
+.mb60 {
+  margin-bottom: 60px;
+}
+
 .pb0 {
   padding-bottom: 0;
+}
+.pb30 {
+  padding-bottom: 30px;
+}
+.pb60 {
+  padding-bottom: 60px;
 }

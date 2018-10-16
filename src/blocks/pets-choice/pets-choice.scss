@@ -9,9 +9,38 @@
   background-color: #f7f3ed;
   padding: 140px 0 160px;
   border-bottom: 1px solid #d9d9d9;
+  position: relative;
+
+  &:before,
+  &:after {
+    background-repeat: no-repeat;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background-image: url('../img/pets-choice-left-bg.png');
+    background-position: left 10% center;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    background-image: url('../img/pets-choice-right-bg.png');
+    background-position: right 10% center;
+  }
 
   &__wrap {
     @include row;
+    position: relative;
+    z-index: 2;
   }
 
   &__card {
@@ -20,10 +49,12 @@
 
     &-body {
       // background: #444;
-      // display: block;
+      display: block;
       border-radius: $border-radius;
       padding: 40px 20px;
       position: relative;
+      text-decoration: none;
+      transition: box-shadow $transition-time;
 
       &:before {
         content: "";
@@ -70,6 +101,11 @@
       #{$block-name}__card-body {
         background-image:linear-gradient( -51deg, rgb(116,67,183) 0%, rgb(67,72,183) 100%);
         min-height: 268px;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 4px 25px rgba(67,72,183, 0.6), 0 1px 25px rgba(115, 124, 148, 0.3);
+        }
       }
     }
 
@@ -77,6 +113,11 @@
       #{$block-name}__card-body {
         background-image:linear-gradient( -45deg, rgb(224,122,67) 0%, rgb(221,175,75) 100%);
         min-height: 268px;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 4px 25px rgba(221,175,75, 0.6), 0 1px 25px rgba(115, 124, 148, 0.3);
+        }
       }
     }
 
@@ -90,6 +131,11 @@
       #{$block-name}__card-body {
         background-image: linear-gradient(51deg, rgb(222,178,149) 0%, rgb(238,175,150) 100%);
         min-height: 175px;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 4px 25px rgba(222,178,149, 0.6), 0 1px 25px rgba(115, 124, 148, 0.3);
+        }
       }
 
       #{$block-name}__card-image {
@@ -101,6 +147,11 @@
       #{$block-name}__card-body {
         background-image: linear-gradient( -51deg, rgb(151,180,193) 0%, rgb(135,166,180) 100%);
         min-height: 175px;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 4px 25px rgba(151,180,193, 0.6), 0 1px 25px rgba(115, 124, 148, 0.3);
+        }
       }
 
       #{$block-name}__card-image {
@@ -113,6 +164,11 @@
       #{$block-name}__card-body {
         background-image:linear-gradient( -51deg, rgb(109,202,63) 0%, rgb(60,152,62) 100%);
         min-height: 175px;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 4px 25px rgba(109,202,63, 0.6), 0 1px 25px rgba(115, 124, 148, 0.3);
+        }
       }
       #{$block-name}__card-image {
         bottom: -48px;

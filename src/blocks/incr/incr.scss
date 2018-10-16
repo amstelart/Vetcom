@@ -29,4 +29,20 @@
     }
   }
 
+  &--basket {
+    background: #e8e8e8;
+    overflow: hidden;
+    color: #000;
+    border-radius: 6px;
+
+    #{$block-name}__nav {
+      color: #a7a7a7;
+
+      &:hover,
+      &:focus {
+        background: darken(#e8e8e8, 5%);
+      }
+    }
+  }
+
 }

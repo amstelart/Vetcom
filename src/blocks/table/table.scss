@@ -53,4 +53,60 @@ $field-padding-horizontal:    0.7em !default;
   &__body {}
 
   &__footer {}
+
+  &--basket {
+
+    td,
+    th {
+
+      border-color: #c3c3c3;
+      padding: 40px 15px;
+
+      &:not(:first-child) {
+        border-left: none;
+      }
+    }
+
+    .basket-row {
+
+      &--header {
+
+        th {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .basket-col--num {
+      width: 5%;
+    }
+    .basket-col--image {
+      width: 15%;
+      padding: 0;
+      vertical-align: middle;
+    }
+    .basket-col--name {
+    }
+    .basket-col--cost {
+      width: 20%;
+      white-space: nowrap;
+    }
+    .basket-subs {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    .basket-col--qt {
+      text-align: center;
+    }
+    .basket-col--wt {
+      white-space: nowrap;
+    }
+    .basket-col--total {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: 'Rubik';
+    }
+  }
 }

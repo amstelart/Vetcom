@@ -1,0 +1,17 @@
+// В этом файле должны быть стили для БЭМ-блока mabile-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.mabile-nav {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__toggler {
+
+
+    @media (min-width: $menu-desktop-width) {
+      display: none;
+    }
+  }
+
+}
