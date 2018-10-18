@@ -167,19 +167,19 @@
                     <label class="field-text">
                       <span class="field-text__name">Старый пароль</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="password" value="245239245349" id="" name="">
+                        <input class="field-text__input" type="password" placeholder="**********" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">Новый пароль</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="password" value="245239245349" id="" name="">
+                        <input class="field-text__input" type="password" placeholder="**********" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">Подтвердить пароль</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="password" value="245239245349" id="" name="">
+                        <input class="field-text__input" type="password" placeholder="**********" id="" name="">
                       </span>
                     </label>
                   </div>
@@ -260,8 +260,7 @@
                   </ul>
                   <div class="tabs__content-wrapper">
                     <div class="tabs__content-item tabs__content-item--active" id="demo-tab-01" role="tabpanel">
-                      <table class="table">
-                        <caption><a class="btn" href="#">Показать еще</a></caption>
+                      <table class="table table--orders table-responsive">
                         <thead class="table__header">
                           <tr>
                             <th>№</th>
@@ -276,66 +275,75 @@
                         </thead>
                         <tbody class="table__body">
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Выполнено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-done" data-label="Состояние">Выполнено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Идет доставка</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-delivery" data-label="Состояние">Идет доставка</td>
+                            <td data-label="Вид оплаты">Наличными</td>
+                            <td data-label="Тип доставки">Самовывоз</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Отменено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-canceled" data-label="Состояние">Отменено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Выполнено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
-                          </tr>
-                          <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Идет доставка</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-done" data-label="Состояние">Выполнено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                         </tbody>
-                        <!-- <tfoot class="table__footer">
-                          <tr>
-                            <td colspan="2">Итого:</td>
-                          </tr>
-                        </tfoot> -->
                       </table>
+                      <div class="table--orders-more"><a class="btn btn--gray-light btn--inherit-text" href="#">Показать еще</a></div>
                     </div>
                     <div class="tabs__content-item" id="demo-tab-02" role="tabpanel">
-                      <table class="table">
-                        <caption><a class="btn" href="#">Показать еще</a></caption>
+                      <table class="table table--orders table-responsive">
                         <thead class="table__header">
                           <tr>
                             <th>№</th>
@@ -350,66 +358,76 @@
                         </thead>
                         <tbody class="table__body">
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Выполнено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-done" data-label="Состояние">Выполнено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Идет доставка</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-delivery" data-label="Состояние">Идет доставка</td>
+                            <td data-label="Вид оплаты">Наличными</td>
+                            <td data-label="Тип доставки">Самовывоз</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Отменено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-canceled" data-label="Состояние">Отменено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Выполнено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
-                          </tr>
-                          <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Идет доставка</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-done" data-label="Состояние">Выполнено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                         </tbody>
-                        <!-- <tfoot class="table__footer">
-                          <tr>
-                            <td colspan="2">Итого:</td>
-                          </tr>
-                        </tfoot> -->
+
                       </table>
+                      <div class="table--orders-more"><a class="btn btn--gray-light btn--inherit-text" href="#">Показать еще</a></div>
                     </div>
                     <div class="tabs__content-item" id="demo-tab-03" role="tabpanel">
-                      <table class="table">
-                        <caption><a class="btn" href="#">Показать еще</a></caption>
+                      <table class="table table--orders table-responsive">
                         <thead class="table__header">
                           <tr>
                             <th>№</th>
@@ -424,61 +442,70 @@
                         </thead>
                         <tbody class="table__body">
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Выполнено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-done" data-label="Состояние">Выполнено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Идет доставка</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-delivery" data-label="Состояние">Идет доставка</td>
+                            <td data-label="Вид оплаты">Наличными</td>
+                            <td data-label="Тип доставки">Самовывоз</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Отменено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-canceled" data-label="Состояние">Отменено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                           <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Выполнено</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
-                          </tr>
-                          <tr>
-                            <td>513918</td>
-                            <td>12.05.2018</td>
-                            <td>15:28</td>
-                            <td>Идет доставка</td>
-                            <td>Онлайн-оплата</td>
-                            <td>Курьером</td>
-                            <td>7 513 руб.</td>
-                            <td><a href="#" class="btn">ff</a></td>
+                            <td data-label="№">513918</td>
+                            <td data-label="Дата заказа">12.05.2018</td>
+                            <td data-label="Время">15:28</td>
+                            <td class="status-done" data-label="Состояние">Выполнено</td>
+                            <td data-label="Вид оплаты">Онлайн-оплата</td>
+                            <td data-label="Тип доставки">Курьером</td>
+                            <td data-label="Сумма заказа">7 513 руб.</td>
+                            <td class="order-repeat" data-label="Повторить заказ">
+                              <a class="btn-icon btn-icon--real-btn" href="#">
+                                <svg class="icon" width="30" height="30">
+                                  <use xlink:href="img/sprite-svg.svg#repeat"></use>
+                                </svg>
+                              </a>
+                            </td>
                           </tr>
                         </tbody>
-                        <!-- <tfoot class="table__footer">
-                          <tr>
-                            <td colspan="2">Итого:</td>
-                          </tr>
-                        </tfoot> -->
                       </table>
                     </div>
                   </div>

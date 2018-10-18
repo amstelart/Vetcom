@@ -111,6 +111,26 @@ $border-radius:               3px !default;
     }
   }
 
+  &--gray-light {
+    color: #000;
+    background-color: #ececec;
+    border: 1px solid #ececec;
+
+    &:hover,
+    &:focus {
+      color: #000;
+      background-color: darken(#ececec, 10%);
+      border-color: darken(#ececec, 12%);
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #000;
+      background-color: #ececec;
+      border-color: #ececec;
+    }
+  }
+
   &--inherit-text {
     text-transform: inherit;
     font-family: 'Open Sans';

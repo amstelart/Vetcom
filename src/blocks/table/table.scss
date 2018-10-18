@@ -109,4 +109,67 @@ $field-padding-horizontal:    0.7em !default;
       font-family: 'Rubik';
     }
   }
+
+  &--orders {
+
+    border: none;
+
+    th {
+      border: none;
+    }
+
+    td,
+    th {
+
+      border-color: #e6e6e6;
+      padding: 20px 15px;
+
+      &:not(:first-child) {
+        border-left: none;
+      }
+    }
+
+    td {
+
+      vertical-align: middle;
+
+      &.status-done {
+        color: #099b30;
+      }
+      &.status-canceled {
+        color: #969595;
+      }
+      &.status-delivery {
+        color: #215596;
+      }
+
+      &.order-repeat {
+        text-align: center;
+
+        .btn-icon {
+          margin: auto;
+
+          .icon {
+            fill: #000;
+          }
+          &:hover,
+          &:focus {
+
+            .icon {
+              fill: #adadad;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--orders-more {
+    text-align: center;
+    margin-top: 30px;
+
+    .btn {
+      min-width: 280px;
+    }
+  }
 }
