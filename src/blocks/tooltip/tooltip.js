@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tooltipBtn.addEventListener('mouseover', function () {
       messageWrap.innerHTML = '';
-      // window.setTimeout(function() {
+      window.setTimeout(function() {
         messageWrap.innerHTML = '<span class="tooltip__bubble">'+ message +'</span>';
-      // }, 100);
+      }, 300);
     });
 
     document.addEventListener('mouseover', function (e) {
