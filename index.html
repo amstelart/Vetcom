@@ -45,7 +45,7 @@
 
 <body>
 
-  <div class="page__inner">
+  <div class="page__inner" id="my-wrapper">
 
     <div class="page__content pb0">
 
@@ -90,7 +90,7 @@
                 </span>
                 <span class="header-basket__count">5</span>
               </a>
-              <div id="mabile-nav-toggler" class="burger mabile-nav__toggler"><span></span></div>
+              <a id="mabile-nav-toggler" href="#my-menu" class="burger mabile-nav__toggler"><span></span></a>
             </div>
           </div>
         </div>
@@ -2664,6 +2664,20 @@
     </div>
 
   </div>
+
+  <nav id="my-menu">
+     <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About us</a>
+           <ul>
+              <li><a href="/about/history/">History</a></li>
+              <li><a href="/about/team/">The team</a></li>
+              <li><a href="/about/address/">Our address</a></li>
+           </ul>
+        </li>
+        <li><a href="/contact/">Contact</a></li>
+     </ul>
+  </nav>
 
   <div id="modal-login" class="modal modal--login" tabindex="-1" role="dialog">
     <div class="modal__dialog" role="document">
