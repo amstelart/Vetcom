@@ -11,8 +11,12 @@
   &__inner {
     max-width: 485px;
     border: 1px solid #e3e3e3;
-    padding: 40px 60px;
+    padding: 40px 20px;
     margin: auto;
+
+    @media (min-width: $screen-md) {
+    padding: 40px 60px;
+    }
   }
 
   &__header {
@@ -38,6 +42,15 @@
       padding: 0.6em 0.5em;
       flex-grow: 1;
       font-family: 'Rubik';
+      font-size: 12px;
+
+      @media (min-width: $screen-md) {
+        font-size: 14px;
+      }
+
+      @media (min-width: $screen-lg) {
+        font-size: 16px;
+      }
 
       &.active {
         color: #000;

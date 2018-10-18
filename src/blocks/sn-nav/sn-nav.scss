@@ -64,6 +64,11 @@
     }
 
     &:hover {
+      background: darken(#f7f3ed, 5%);
+    }
+
+    #{$block-name}__item--show-child > & {
+
       background: #d9e1ec;
       color: #00519f;
 

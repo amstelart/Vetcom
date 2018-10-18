@@ -1,5 +1,16 @@
 $( document ).ready(function() {
 
+  $("#my-menu").mmenu({
+   // options
+   "slidingSubmenus": true,
+   "extensions": ["widescreen", "pagedim-black", "position-left"]
+  }, {
+     // configuration
+     offCanvas: {
+        pageSelector: "#my-wrapper"
+     }
+  });
+
   $('.main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -42,9 +53,9 @@ $( document ).ready(function() {
     ]
   });
 
-  // $('a[data-toogle="tab"]').on('click', function(e) {
-  //    $('.product-carousel').slick('reinit');
-  // });
+  $('a[data-toogle="tab"]').on('click', function(e) {
+     $('.product-carousel').slick('reinit');
+  });
 
   $(window).on("load resize", function(){
     var width = $(document).width();

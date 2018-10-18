@@ -16,27 +16,33 @@ $line-height:                 1.375em !default;
   &__btn {
     display: inline-block;
     padding: 0;
-    width: $line-height;
-    height: $line-height;
+    width: $line-height * 2;
+    height: $line-height * 2;
     overflow: hidden;
     border: none;
     color: transparent;
     background: transparent;
-    background-image: svg-load('../blocks/tooltip/bg-img/info.svg', fill='#{$gray}');
+    background-image: svg-load('../blocks/tooltip/bg-img/question.svg', fill='#{$gray}');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1em;
+    background-size: 2em;
+
+    &--green {
+      background-image: svg-load('../blocks/tooltip/bg-img/question.svg', fill='#{$color-main}');
+    }
   }
 
   &__bubble {
     position: absolute;
     top: calc(100% + 8px);
     left: 0;
-    min-width: 150px;
+    min-width: 200px;
     max-width: 250px;
     padding: 10px 15px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 400;
 
     @supports ( filter: drop-shadow(0 0 0) ) {
       box-shadow: none;

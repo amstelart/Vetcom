@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     messageWrap.setAttribute('role', 'status');
     tooltip.appendChild(messageWrap);
 
-    tooltipBtn.addEventListener('click', function () {
+    tooltipBtn.addEventListener('mouseover', function () {
       messageWrap.innerHTML = '';
       // window.setTimeout(function() {
         messageWrap.innerHTML = '<span class="tooltip__bubble">'+ message +'</span>';
       // }, 100);
     });
 
-    document.addEventListener('click', function (e) {
+    document.addEventListener('mouseover', function (e) {
       if (tooltipBtn != e.target) {
         messageWrap.innerHTML = '';
       }
