@@ -699,6 +699,71 @@
       </div>
     </div>
   </div>
+
+  <div id="modal-review" class="modal modal--review" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Оставить отзыв</h4>
+        </div>
+        <div class="modal__body">
+          <form class="form" action="">
+            <label class="field-text">
+              <span class="field-text__name">Имя*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Антон" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Телефон*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="tel" placeholder="+7 (___) __-__-___" name="" id="phone">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Email*</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="email" placeholder="anton@email.com" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Комментарий*</span>
+              <span class="field-text__input-wrap">
+                <textarea class="field-text__input" placeholder="textarea"></textarea>
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Достоинства</span>
+              <span class="field-text__input-wrap">
+                <textarea class="field-text__input" placeholder="textarea"></textarea>
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Недостатки</span>
+              <span class="field-text__input-wrap">
+                <textarea class="field-text__input" placeholder="textarea"></textarea>
+              </span>
+            </label>
+            <div class="field-actions">
+              <div class="field-actions__text">* — обязательные поля</div>
+              <button class="btn btn--block btn--main">Оставить отзыв</button>
+            </div>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="" checked="">
+                <span class="field-checkbox__name-text">Я принимаю условия</span>
+                <a href="#">пользовательского соглашения</a>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal__footer">
+          <p class="modal__caption-text">Ваш телефон и адрес электронной почты не будет виден другим пользователям. Перед публикацией все сообщения проходят модерацию</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/script.min.js"></script>
 
 </body>
