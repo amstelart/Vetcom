@@ -85,7 +85,13 @@
     "slick-theme": [],
     "main-slider": [],
     "sn-nav": [],
-    "mabile-nav": []
+    "mabile-nav": [],
+    "catalog-cards": [],
+    "price-slider": [],
+    "aside-filter": [],
+    "catalog-nav": [],
+    "table-price-category": [],
+    "your-price-category": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

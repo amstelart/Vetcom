@@ -38,11 +38,22 @@
                 </li>
                 <li><span>Наполнители для кошек</span></li>
               </ul>
-              <div class="aside-filser">
-                <h5 class="aside-filser__title">Цена</h5>
+              <div class="aside-filter">
+                <h5 class="aside-filter__title">Цена</h5>
+                <div class="price-slider">
+                  <div class="price-slider__range">
+                    <input class="field-text__input" type="text" id="input-with-keypress-0">
+                    <span>—</span>
+                    <input class="field-text__input" type="text" id="input-with-keypress-1">
+                  </div>
+                  <div class="price-slider__container">
+                    <div id="keypress">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="aside-filser">
-                <h5 class="aside-filser__title">Вид товара</h5>
+              <div class="aside-filter">
+                <h5 class="aside-filter__title">Вид товара</h5>
                 <div class="field-checkbox">
                   <div class="field-checkbox__input-wrap">
                     <label class="field-checkbox__name">
@@ -105,8 +116,141 @@
                 </form>
               </div>
               <div class="catalog-cards">
-                @@include('blocks/product-card/product-card.html')
-                @@include('blocks/product-card/product-card.html')
+                <div class="product-card">
+                  <div class="product-card__inner">
+                    <div class="label label--sale">20%</div>
+                    <div class="product-card__image">
+                      <a href="page-product.html">
+                        <img src="img/product-image.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-card__body">
+                      <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
+                      <ul class="product-card__info">
+                        <li>Артикул: 1234567</li>
+                        <li>В наличии: 520 шт.</li>
+                      </ul>
+                      <div class="product-card__price">
+                        <div class="price-delivery">1050 <span class="rub">a</span></div>
+                        <div class="price-pickup">
+                          <div class="price-pickup__text">
+                            900 <span class="rub">a</span>
+                          </div>
+                          <span class="tooltip">
+                            <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом">Подсказка</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__basket">
+                      <div class="add-basket">
+                        <dutton class="btn btn--main">в корзину</dutton>
+                        <div class="incr">
+                          <div class="incr__minus incr__nav">
+                            <span>-</span>
+                          </div>
+                          <div class="incr__val">
+                            <span>2</span>
+                          </div>
+                          <div class="incr__plus incr__nav">
+                            <span>+</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__action">
+                      <div class="product-card__subs">
+                        <a href="#">В подписку</a>
+                        <span class="tooltip">
+                          <button class="tooltip__btn" aria-label="more info" data-tooltip-content="Добавить товар в подписку">Подсказка</button>
+                        </span>
+                      </div>
+
+                      <div class="product-card__links">
+                        <a class="btn-icon btn-icon--real-btn" href="page-favorite.html">
+                          <svg class="icon" width="18" height="16">
+                            <use xlink:href="img/sprite-svg.svg#favorite"></use>
+                          </svg>
+                        </a>
+                        <a class="btn-icon btn-icon--real-btn" href="page-compare.html">
+                          <svg class="icon" width="19" height="17">
+                            <use xlink:href="img/sprite-svg.svg#compare"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="product-card">
+                  <div class="product-card__inner">
+                    <div class="product-card__image">
+                      <a href="page-product.html">
+                        <img src="img/product-image.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-card__body">
+                      <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
+                      <ul class="product-card__info">
+                        <li>Артикул: 1234567</li>
+                        <li class="color-red">Нет в наличии</li>
+                      </ul>
+                      <div class="product-card__price">
+                        <div class="price-delivery">1050 <span class="rub">a</span></div>
+                        <div class="price-pickup">
+                          <div class="price-pickup__text">
+                            900 <span class="rub">a</span>
+                          </div>
+                          <span class="tooltip">
+                            <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом">Подсказка</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__basket">
+                      <div class="add-basket">
+                        <dutton class="btn btn--main">в корзину</dutton>
+                        <div class="incr">
+                          <div class="incr__minus incr__nav">
+                            <span>-</span>
+                          </div>
+                          <div class="incr__val">
+                            <span>2</span>
+                          </div>
+                          <div class="incr__plus incr__nav">
+                            <span>+</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__action">
+                      <div class="product-card__subs">
+                        <a href="#">В подписку</a>
+                        <span class="tooltip">
+                          <button class="tooltip__btn" aria-label="more info" data-tooltip-content="Добавить товар в подписку">Подсказка</button>
+                        </span>
+                      </div>
+
+                      <div class="product-card__links">
+                        <a class="btn-icon btn-icon--real-btn" href="page-favorite.html">
+                          <svg class="icon" width="18" height="16">
+                            <use xlink:href="img/sprite-svg.svg#favorite"></use>
+                          </svg>
+                        </a>
+                        <a class="btn-icon btn-icon--real-btn" href="page-compare.html">
+                          <svg class="icon" width="19" height="17">
+                            <use xlink:href="img/sprite-svg.svg#compare"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
                 @@include('blocks/product-card/product-card.html')
 
                 @@include('blocks/product-card/product-card.html')
@@ -135,5 +279,28 @@
 
   @@include('blocks/modal/modal.html')
   @@include('_include/page_bottom.html')
+  <script>
+    // фильтр цены
+    var keypressSlider = document.getElementById('keypress');
+    var input0 = document.getElementById('input-with-keypress-0');
+    var input1 = document.getElementById('input-with-keypress-1');
+    var inputs = [input0, input1];
+
+    noUiSlider.create(keypressSlider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': [0],
+            '10%': [10, 10],
+            '50%': [80, 50],
+            '80%': 150,
+            'max': 200
+        }
+    });
+
+    keypressSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+  </script>
 </body>
 </html>

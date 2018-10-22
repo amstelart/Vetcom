@@ -106,6 +106,13 @@ $z-index-modal:               100 !default;
     justify-content: space-between;
   }
 
+  &__caption-text {
+    font-size: 14px;
+    color: #bcbdbd;
+    line-height: 18px;
+    font-family: 'Rubik';
+  }
+
   &__backdrop {
     position: fixed;
     top: 0;
@@ -126,6 +133,51 @@ $z-index-modal:               100 !default;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  &--review {
+    #{$block-name}__dialog {
+
+      @media (min-width: $screen-lg) {
+        width: 560px;
+        height: auto;
+      }
+    }
+  }
+
+  &--price-category {
+
+    #{$block-name}__content {
+      padding: 0;
+    }
+
+    #{$block-name}__dialog {
+
+      @media (min-width: $screen-lg) {
+        width: 850px;
+        height: auto;
+      }
+    }
+
+    #{$block-name}__header {
+      padding: 2em 2em 0 2em;
+    }
+
+    #{$block-name}__title {
+      font-size: 30px;
+      font-family: 'Rubik';
+      font-weight: 400;
+      text-align: left;
+    }
+
+    #{$block-name}__body {
+      padding: 0 2em;
+    }
+
+    #{$block-name}__footer {
+      background: #f7f3ed;
+      padding: 2em;
     }
   }
 }

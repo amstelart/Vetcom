@@ -204,6 +204,10 @@ img {
       margin: 0;
       display: flex;
 
+      @media (max-width: $screen-md) {
+        font-size: 18px;
+      }
+
       .more-link {
         margin-left: auto;
       }
@@ -218,87 +222,6 @@ img {
 
   .icon {
     fill: #c3c3c3;
-  }
-}
-
-.catalog-cards {
-  @include row;
-
-  .product-card {
-    @include col();
-    @include col(sm, 6);
-    @include col(md, 4);
-    @include col(lg, 6);
-    @include col(xl, 4);
-  }
-
-  &--inline {
-    .product-card {
-      @include col();
-      @include col(lg, 12);
-      @include col(xl, 12);
-    }
-  }
-}
-
-.catalog-nav {
-
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  font-family: 'Rubik';
-  font-size: 16px;
-
-  > li {
-    border-bottom: 1px solid $border-color;
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 15px 0;
-
-      li {
-        margin: 4px 0;
-        a {
-          text-decoration: none;
-          padding: 0.4em 0;
-          display: block;
-        }
-      }
-    }
-
-    > span,
-    > a {
-      padding: 1em 2em 1em 0;
-      display: block;
-      cursor: pointer;
-    }
-
-    span {
-      position: relative;
-
-      &:after {
-        content: '';
-        position: absolute;
-        right: 2px;
-        top: 1.3em;
-        width: 10px;
-        height: 10px;
-        border-bottom: 2px solid #31353f;
-        border-right: 2px solid #31353f;
-        transform: rotate(45deg);
-      }
-    }
-
-    &.active {
-      span {
-        font-weight: 500;
-
-        &:after {
-          transform: rotate(225deg);
-        }
-      }
-    }
   }
 }
 

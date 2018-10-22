@@ -1,0 +1,11 @@
+// В этом файле должны быть стили для БЭМ-блока aside-filser, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.aside-filter {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 40px;
+
+}

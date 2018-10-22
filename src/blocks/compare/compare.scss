@@ -6,6 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__table {
+    font-family: 'Rubik';
+  }
+
   &__table-item {
     border-bottom: 1px solid $border-color;
     margin-bottom: 15px;

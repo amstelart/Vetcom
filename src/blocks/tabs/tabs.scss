@@ -33,13 +33,6 @@ $field-padding-horizontal:    0.7em !default;
     .no-js & {
       display: none;
     }
-
-    // &:after {
-    //   content: '';
-    //   flex-grow: 1;
-    //   height: 1px;
-    //   background-color: $border-color;
-    // }
   }
 
   &__link-wrap {
@@ -77,6 +70,7 @@ $field-padding-horizontal:    0.7em !default;
 
   &__content-wrapper {
     display: block;
+    margin: 40px 0;
   }
 
   &__content-item {
@@ -94,6 +88,7 @@ $field-padding-horizontal:    0.7em !default;
   }
 
   &--carousel {
+
     .tabs__content-item {
       display: block !important;
       height: 0px;
@@ -109,15 +104,23 @@ $field-padding-horizontal:    0.7em !default;
     margin-top: 0;
 
     #{$block-name}__links {
-      margin-bottom: 60px;
-      margin-top: -78px;
-      // border-left: 1px solid #d9d9d9;
-      // border-top: 1px solid #d9d9d9;
-      // border-right: 1px solid #d9d9d9;
+      @media (min-width: $screen-lg) {
+        margin-bottom: 60px;
+        margin-top: -78px;
+      }
     }
 
     #{$block-name}__link {
       background-color: #fff;
+
+      @media (max-width: $screen-md) {
+        background-color: #d9d9d9;
+      }
+
+      @media (max-width: $screen-sm) {
+        font-size: 14px;
+        text-align: left;
+      }
 
       .icon {
         vertical-align: middle;
@@ -130,17 +133,24 @@ $field-padding-horizontal:    0.7em !default;
       border: none;
       border-top: 1px solid #d9d9d9;
 
-      &:first-child {
-        border-right: 0;
-        border-left: 1px solid #d9d9d9;
-        border-top-left-radius: 6px;
-        overflow: hidden;
+      @media (max-width: $screen-md) {
+        max-width: 50%;
+        flex-basis: 50%;
       }
-      &:last-child {
-        border-left: 0;
-        border-right: 1px solid #d9d9d9;
-        border-top-right-radius: 6px;
-        overflow: hidden;
+
+      @media (min-width: $screen-md) {
+        &:first-child {
+          border-right: 0;
+          border-left: 1px solid #d9d9d9;
+          border-top-left-radius: 6px;
+          overflow: hidden;
+        }
+        &:last-child {
+          border-left: 0;
+          border-right: 1px solid #d9d9d9;
+          border-top-right-radius: 6px;
+          overflow: hidden;
+        }
       }
 
       &--active {
