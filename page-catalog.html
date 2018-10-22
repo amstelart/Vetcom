@@ -411,11 +411,22 @@
                 </li>
                 <li><span>Наполнители для кошек</span></li>
               </ul>
-              <div class="aside-filser">
-                <h5 class="aside-filser__title">Цена</h5>
+              <div class="aside-filter">
+                <h5 class="aside-filter__title">Цена</h5>
+                <div class="price-slider">
+                  <div class="price-slider__range">
+                    <input class="field-text__input" type="text" id="input-with-keypress-0">
+                    <span>—</span>
+                    <input class="field-text__input" type="text" id="input-with-keypress-1">
+                  </div>
+                  <div class="price-slider__container">
+                    <div id="keypress">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="aside-filser">
-                <h5 class="aside-filser__title">Вид товара</h5>
+              <div class="aside-filter">
+                <h5 class="aside-filter__title">Вид товара</h5>
                 <div class="field-checkbox">
                   <div class="field-checkbox__input-wrap">
                     <label class="field-checkbox__name">
@@ -1302,5 +1313,28 @@
   </div>
   <script src="js/script.min.js"></script>
 
+  <script>
+    // фильтр цены
+    var keypressSlider = document.getElementById('keypress');
+    var input0 = document.getElementById('input-with-keypress-0');
+    var input1 = document.getElementById('input-with-keypress-1');
+    var inputs = [input0, input1];
+
+    noUiSlider.create(keypressSlider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': [0],
+            '10%': [10, 10],
+            '50%': [80, 50],
+            '80%': 150,
+            'max': 200
+        }
+    });
+
+    keypressSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+  </script>
 </body>
 </html>
