@@ -419,7 +419,7 @@
               </section>
               <section class="checkout__part">
                 <h2 class="checkout__part-title">2. Служба доставки</h2>
-                <div class="field-radio field-radio--service field-radio--inline">
+                <div class="field-radio field-radio--service">
                   <div class="field-radio__input-wrap">
                     <label class="field-radio__name">
                       <input class="field-radio__input" type="radio" id="" name="demo-radio-2">
@@ -456,7 +456,7 @@
                       </span>
                     </label>
                   </div>
-                  <div class="field-radio__input-wrap">
+                  <div class="field-radio__input-wrap field-radio__input-wrap--xl">
                     <label class="field-radio__name">
                       <input class="field-radio__input" checked type="radio" id="" name="demo-radio-2">
                       <span class="field-radio__name-text">Транспорт ветеринарной компании</span>
@@ -469,9 +469,13 @@
               </section>
               <section class="checkout__part">
                 <h2 class="checkout__part-title">2. Контактная информация</h2>
-                <div class="checkout__part-toggle">
-                  <a class="active" href="#">Физическое лицо</a>
-                  <a href="#">Юридическое лицо</a>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col">
+                    <div class="checkout__part-toggle">
+                      <a class="active" href="#">Физическое лицо</a>
+                      <a href="#">Юридическое лицо</a>
+                    </div>
+                  </div>
                 </div>
                 <div class="checkout__part-wrap">
                   <div class="checkout__part-col">
@@ -573,20 +577,26 @@
                 </div>
               </section>
               <section class="checkout__part checkout__part--action">
+
                 <div class="checkout__amount">
                   <div class="checkout__amount-price">Итого: 13 770 руб.</div>
                   <div class="checkout__amount-unit">Товары - 5 шт.</div>
                 </div>
-                <div class="field-actions">
-                  <button class="btn btn--main">Оформить заказ</button>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col">
+                    <div class="field-actions">
+                      <button class="btn btn--block btn--main">Оформить заказ</button>
+                    </div>
+                    <div class="field-checkbox">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">Согласен с</span>
+                        <a href="#">торговыми условиями</a>
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="field-checkbox">
-                  <label class="field-checkbox__name">
-                    <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
-                    <span class="field-checkbox__name-text">Согласен с</span>
-                    <a href="#">торговыми условиями</a>
-                  </label>
-                </div>
+
               </section>
             </form>
           </section>
