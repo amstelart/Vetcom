@@ -6,6 +6,18 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__modile-btn {
+    display: flex;
+
+    .btn-icon svg {
+      fill: #000;
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      display: none;
+    }
+  }
+
   &__call {
     display: none;
 
@@ -91,6 +103,9 @@
     overflow: hidden;
     text-decoration: none;
     display: none;
+    font-family: 'Rubik';
+    font-size: 14px;
+    font-weight: 400;
 
     &__wrap {
       padding: 0.6em 1.4em;
@@ -127,7 +142,7 @@
       padding: 0.6em 1.4em;
       vertical-align: middle;
     }
-    
+
     @media (min-width: $menu-desktop-width) {
       display: flex;
     }

@@ -6,6 +6,12 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  @media (min-width: $menu-desktop-width) {
+    @include container;
+  }
+
+  margin-bottom: 20px;
+
   &.slick-theme {
 
     .slick-arrow {
@@ -15,10 +21,18 @@
 
     .slick-prev {
       left: 45px;
+
+      &:before {
+        background-image: svg-load('../blocks/slick-theme/bg-img/slick-prev-icon.svg', fill=#fff) !important;
+      }
     }
 
     .slick-next {
       right: 45px;
+
+      &:before {
+        background-image: svg-load('../blocks/slick-theme/bg-img/slick-next-icon.svg', fill=#fff) !important;
+      }
     }
   }
 

@@ -1,0 +1,43 @@
+// В этом файле должны быть стили для БЭМ-блока subs-terms, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.subs-terms {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__link {
+
+  }
+
+  &__tags {
+    margin-bottom: 20px;
+    .tag {
+      background: #f7f3ed;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 8px;
+      padding: 5px 8px;
+      font-size: 16px;
+
+      b {
+        font-weight: 600;
+      }
+    }
+  }
+
+}

@@ -27,6 +27,10 @@
     background-position: right 10px center;
     outline: none;
 
+    &:focus {
+      @include field-focus;
+    }
+
     &::placeholder {
       color: #131c30;
       opacity: 1;

@@ -168,26 +168,6 @@ img {
   }
 }
 
-.about {
-  padding: 20px 0;
-
-  @media (min-width: $menu-desktop-width) {
-    background-image: url('../img/dog-bg.png');
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 45%;
-  }
-
-  &__wrap {
-    @include row;
-  }
-
-  &__inner {
-    @include col();
-    @include col(lg, 7);
-  }
-}
-
 .product-section {
   border-bottom: 1px solid #dbdbdb;
   padding: 30px 0;
@@ -228,19 +208,36 @@ img {
 .page-title {
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 1.5em;
+
+  @media (min-width: $screen-md) {
+     font-size:  2.25em;
+  }
 }
 
 .price-category {
   background: #ebeef2;
-  padding: 30px;
-  display: flex;
-  align-items: center;
+  padding: 10px;
+
+  @media (min-width: $screen-md) {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+  }
 
   &__body {
     flex-grow: 1;
 
+    @media (max-width: $screen-md) {
+      margin-bottom: 15px;
+    }
+
     h2 {
       margin: 0;
+
+      @media (max-width: $screen-md) {
+        font-size: 18px;
+      }
     }
 
     p {
@@ -248,7 +245,30 @@ img {
       font-family: 'Rubik';
       font-weight: 100;
       margin: 0;
+
+      @media (max-width: $screen-md) {
+        font-size: 14px;
+
+        span {
+          display: block;
+        }
+      }
     }
+  }
+
+  &__more {
+
+    a {
+      @media (max-width: $screen-md) {
+        background: darken(#ebeef2, 10%);
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
   }
 }
 
@@ -258,6 +278,9 @@ img {
   overflow: hidden;
 
   .btn {
+    font-size: 14px;
+    font-family: 'Rubik';
+    font-weight: 400;
     border-radius: 0;
     padding: 0.7em;
   }

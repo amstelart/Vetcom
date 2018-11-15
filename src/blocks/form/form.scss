@@ -39,6 +39,14 @@ $line-height:                 1.375em !default;
 
     .btn {
       min-width: 225px;
+
+      @media (max-width: $screen-sm) {
+        min-width: 100%;
+      }
+
+      @media (min-width: $screen-xl) {
+        min-width: 100%;
+      }
     }
 
     .btn + .btn {

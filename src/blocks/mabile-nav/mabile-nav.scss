@@ -8,6 +8,8 @@
 
   &__toggler {
 
+    flex-shrink: 0;
+    margin-right: 10px;
 
     @media (min-width: $menu-desktop-width) {
       display: none;

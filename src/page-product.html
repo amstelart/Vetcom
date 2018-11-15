@@ -95,9 +95,7 @@
                       <div class="incr__minus incr__nav">
                         <span>-</span>
                       </div>
-                      <div class="incr__val">
-                        <span>2</span>
-                      </div>
+                      <input class="incr__val" type="text" name="" value="100">
                       <div class="incr__plus incr__nav">
                         <span>+</span>
                       </div>
@@ -154,8 +152,18 @@
                 </div>
 
                 <div class="product-case__part product-case__part--files">
-                  <a href="#">Скачать инструкцию</a>
-                  <a href="#">Скачать сертификат</a>
+                  <a class="btn-icon btn-icon--real-btn btn-icon--add-text" href="#">
+                    <svg class="icon" width="20" height="20">
+                      <use xlink:href="img/sprite-svg.svg#icon-pdf"></use>
+                    </svg>
+                    <span class="btn-icon__text">Скачать инструкцию</span>
+                  </a>
+                  <a class="btn-icon btn-icon--real-btn btn-icon--add-text" href="#">
+                    <svg class="icon" width="20" height="20">
+                      <use xlink:href="img/sprite-svg.svg#icon-file"></use>
+                    </svg>
+                    <span class="btn-icon__text">Скачать сертификат</span>
+                  </a>
                 </div>
 
               </div>
@@ -355,7 +363,7 @@
                 </a>
               </h2>
             </div>
-            <div class="product-card__wrap">
+            <div class="product-card__wrap product-carousel slick-theme">
               @@include('blocks/product-card/product-card.html')
               @@include('blocks/product-card/product-card.html')
               @@include('blocks/product-card/product-card.html')
@@ -374,7 +382,7 @@
                 </a>
               </h2>
             </div>
-            <div class="product-card__wrap">
+            <div class="product-card__wrap product-carousel slick-theme">
               @@include('blocks/product-card/product-card.html')
               @@include('blocks/product-card/product-card.html')
               @@include('blocks/product-card/product-card.html')
@@ -393,7 +401,7 @@
                 </a>
               </h2>
             </div>
-            <div class="product-card__wrap">
+            <div class="product-card__wrap product-carousel slick-theme">
               @@include('blocks/product-card/product-card.html')
               @@include('blocks/product-card/product-card.html')
               @@include('blocks/product-card/product-card.html')

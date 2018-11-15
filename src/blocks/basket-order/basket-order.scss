@@ -1,0 +1,27 @@
+// В этом файле должны быть стили для БЭМ-блока basket-order, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.basket-order {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border: 1px solid $border-color;
+
+  &__part {
+    &:not(:last-child) {
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    padding: 15px;
+
+    .price-quantity {
+      margin-bottom: 15px;
+    }
+
+    .price-sum {
+      margin-bottom: 15px;
+    }
+  }
+
+}

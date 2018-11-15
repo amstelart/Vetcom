@@ -14,6 +14,10 @@
     &:last-child {
       border-bottom: none;
     }
+
+    &--action {
+
+    }
   }
 
   &__part-wrap {
@@ -21,6 +25,7 @@
   }
   &__part-col {
     @include col();
+    @include col(md, 6);
     @include col(lg, 4);
   }
   &__part-col-2 {
@@ -29,8 +34,12 @@
   }
 
   &__part-title {
-    font-size: 30px;
+    font-size: 21px;
     font-weight: 500;
+
+    @media (min-width: $screen-md) {
+      font-size: 30px;
+    }
   }
 
   &__part-toggle {
@@ -40,14 +49,42 @@
       text-decoration: none;
       color: #b9b9b9;
       border-bottom: 2px solid #b9b9b9;
-      padding: 0.6em 2em;
+      padding: 0.6em 0;
+      flex-grow: 1;
+      text-align: center;
       font-family: 'Rubik';
+      font-size: 14px;
+
+      @media (min-width: $screen-md) {
+        font-size: 16px;
+      }
 
       &.active {
         color: #000;
         border-color: $color-main;
       }
     }
+  }
+
+  &__amount {
+    font-family: 'Rubik';
+    margin-bottom: 15px;
+  }
+
+  &__amount-price {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+      font-size: 36px;
+    }
+  }
+
+  &__amount-unit {
+    font-size: 16px;
+    line-height: 1.3;
   }
 
 }

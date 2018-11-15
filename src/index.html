@@ -18,10 +18,12 @@
 
       <main class="page__main-content" role="main">
 
-      <section class="main-slider slick-theme">
-        <img src="img/slide-01.jpg" alt="">
-        <img src="img/slide-01.jpg" alt="">
-        <img src="img/slide-01.jpg" alt="">
+      <section class="main-slider__wrap">
+        <div class="main-slider slick-theme">
+          <img src="img/slide-01.jpg" alt="">
+          <img src="img/slide-01.jpg" alt="">
+          <img src="img/slide-01.jpg" alt="">
+        </div>
       </section>
 
         <section class="pets-choice">
@@ -40,7 +42,7 @@
               <div class="pets-choice__card pets-choice__card--cat">
                 <a href="page-catalog.html" class="pets-choice__card-body">
                   <div class="pets-choice__card-name">
-                    У меня <br><span>кошка
+                    У меня <br><span>кошка</span>
                   </div>
                   <div class="pets-choice__card-image">
                     <img src="img/card-cat.png" alt="">
@@ -50,7 +52,7 @@
               <div class="pets-choice__card pets-choice__card--mouse">
                 <a href="page-catalog.html" class="pets-choice__card-body">
                   <div class="pets-choice__card-name">
-                    У меня <br><span>грызун
+                    У меня <br><span>грызун</span>
                   </div>
                   <div class="pets-choice__card-image">
                     <img src="img/card-mouse.png" alt="">
@@ -60,7 +62,7 @@
               <div class="pets-choice__card pets-choice__card--fish">
                 <a href="page-catalog.html" class="pets-choice__card-body">
                   <div class="pets-choice__card-name">
-                    У меня <br><span>рыба
+                    У меня <br><span>рыба</span>
                   </div>
                   <div class="pets-choice__card-image">
                     <img src="img/card-fish.png" alt="">
@@ -70,7 +72,7 @@
               <div class="pets-choice__card pets-choice__card--bird">
                 <a href="page-catalog.html" class="pets-choice__card-body">
                   <div class="pets-choice__card-name">
-                    У меня <br><span>птица
+                    У меня <br><span>птица</span>
                   </div>
                   <div class="pets-choice__card-image">
                     <img src="img/card-bird.png" alt="">
@@ -197,14 +199,12 @@
 
                   <div class="product-card__basket">
                     <div class="add-basket">
-                      <dutton class="btn btn--main">в корзину</dutton>
+                      <button class="btn btn--main">в корзину</button>
                       <div class="incr">
                         <div class="incr__minus incr__nav">
                           <span>-</span>
                         </div>
-                        <div class="incr__val">
-                          <span>2</span>
-                        </div>
+                        <input class="incr__val" type="text" name="" value="2">
                         <div class="incr__plus incr__nav">
                           <span>+</span>
                         </div>
@@ -305,9 +305,11 @@
           <div class="main-container">
             <div class="about__wrap">
               <div class="about__inner">
-                <h2>Ветеринарная компания</h2>
-                <p>Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
-                <p>Наша розничная сеть состоит из 13 ветеринарных аптек и 5 зоомагазинов «МиниПиги». Зоомагазины в «классическом» понимании: наличие мелких животных, птиц, рыб, рептилий. И, естественно, все необходимое для обеспечения их нормальной жизни. В ветеринарной аптеке всегда можно приобрести то, что назначил доктор. Получить консультацию ветеринара-фармацевта; а также, рекомендацию ветеринара-практика, по решению проблем именно Вашего питомца. Профессиональный уровень сотрудников подтверждается дипломами и сертификатами производителей зооветтоваров.</p>
+                <h2 class="about__title">Ветеринарная компания</h2>
+                <div class="about__caption">
+                  <p>Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
+                  <p>Наша розничная сеть состоит из 13 ветеринарных аптек и 5 зоомагазинов «МиниПиги». Зоомагазины в «классическом» понимании: наличие мелких животных, птиц, рыб, рептилий. И, естественно, все необходимое для обеспечения их нормальной жизни. В ветеринарной аптеке всегда можно приобрести то, что назначил доктор. Получить консультацию ветеринара-фармацевта; а также, рекомендацию ветеринара-практика, по решению проблем именно Вашего питомца. Профессиональный уровень сотрудников подтверждается дипломами и сертификатами производителей зооветтоваров.</p>
+                </div>
                 <div class="company-progress">
                   <div class="company-progress__item">
                     <svg class="icon" width="74" height="74">
@@ -328,7 +330,7 @@
                       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#car-icon"></use>
                     </svg>
                     <div class="value">10</div>
-                    <div class="name">едениц техники</div>
+                    <div class="name">единиц техники</div>
                   </div>
                 </div>
               </div>

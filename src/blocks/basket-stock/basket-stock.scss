@@ -1,0 +1,114 @@
+// В этом файле должны быть стили для БЭМ-блока basket-stock, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.basket-stock {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border: 1px solid $border-color;
+
+  &__item {
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    display: flex;
+
+    @media (max-width: ($screen-md - 1)) {
+      display: block;
+    }
+
+    .item-part {
+
+      &--info {
+        margin-right: 45px;
+        margin-bottom: 0;
+        padding-top: 29px;
+        width: calc(100% - 275px);
+
+        @media (max-width: ($screen-md - 1)) {
+          display: block;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      &--action {
+        padding-top: 29px;
+        display: inline-flex;
+        width: 275px;
+        padding-top: 24px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        @media (max-width: ($screen-md - 1)) {
+          display: flex;
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &__image-wrap {
+        display: inline-flex;
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin-top: -10px;
+        margin-bottom: 0;
+      }
+
+      &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      &__description {
+        display: inline-flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: flex-start;
+        flex: 1 1 auto;
+        justify-content: start;
+        width: calc(100% - 115px);
+        padding-bottom: 15px;
+        padding-left: 20px;
+        vertical-align: top;
+
+        .desc-title {
+          font-weight: 600;
+          line-height: 1.2;
+          margin-bottom: 5px;
+          a {
+            display: block;
+            text-decoration: none;
+          }
+        }
+        .desc-art {
+          color: #ccc;
+          font-size: 14px;
+          line-height: 1.2;
+          margin-bottom: 5px;
+        }
+      }
+
+      &__incr {
+        margin-right: 20px;
+
+        .incr {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__price {
+    flex-grow: 1;
+  }
+
+}

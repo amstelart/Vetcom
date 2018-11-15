@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока layout-subs, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.layout-subs {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    .filter-wrapper {
+      flex-grow: 1;
+    }
+
+    .orientation-card {
+      @media (min-width: $screen-sm) {        
+        margin-left: 20px;
+      }
+    }
+  }
+
+}

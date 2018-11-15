@@ -19,4 +19,13 @@
     margin-left: 0.3em;
     fill: $color-main;
   }
+
+  &:hover,
+  &:focus {
+    color: lighten($color-main, 10%);
+
+    #{$block-name}__icon {
+      fill: lighten($color-main, 10%);
+    }
+  }
 }

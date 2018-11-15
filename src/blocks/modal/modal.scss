@@ -169,6 +169,10 @@ $z-index-modal:               100 !default;
       font-family: 'Rubik';
       font-weight: 400;
       text-align: left;
+
+      @media (max-width: ($screen-md - 1)) {
+        font-size: 22px;
+      }
     }
 
     #{$block-name}__body {

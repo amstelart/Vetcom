@@ -25,10 +25,24 @@
               <section class="checkout__part">
                 <div class="checkout__part-wrap">
                   <div class="checkout__part-col-2">
+                    <div class="subs-informer">
+                      <div class="subs-informer__body">
+                        <h2>Товары в подписках</h2>
+                        <p>Вы подписались на 51 позицию</p>
+                      </div>
+                      <div class="subs-informer__more">
+                        <a href="#">Что такое подписка?</a>
+                        <a href="#">Смотреть товары</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col-2">
                     <div class="price-category">
                       <div class="price-category__body">
                         <h2>Ценовые категории</h2>
-                        <p>Ваша ценовая категория «Спец.зоо». Скидка 40-50%</p>
+                        <p><spam>Ваша ценовая категория «Спец.зоо».</span> <span>Скидка 40-50%</span></p>
                       </div>
                       <div class="price-category__more">
                         <a href="#modal-price-category" data-toggle="modal">Подробнее</a>
@@ -64,13 +78,13 @@
                     <label class="field-text">
                       <span class="field-text__name">ИНН</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="215134635" id="" name="">
+                        <input class="field-text__input" type="number" placeholder="215134635" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">ОГРН</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="245239245349" id="" name="">
+                        <input class="field-text__input" type="number" placeholder="245239245349" id="" name="">
                       </span>
                     </label>
                   </div>
@@ -78,25 +92,25 @@
                     <label class="field-text">
                       <span class="field-text__name">КПП</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="12345234635" id="" name="">
+                        <input class="field-text__input" type="number" placeholder="12345234635" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">БИК Банка</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="356234523452" id="" name="">
+                        <input class="field-text__input" type="number" placeholder="356234523452" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">Кор/счет</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="546345634564563453" id="" name="">
+                        <input class="field-text__input" type="number" placeholder="546345634564563453" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">Р/счёт</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="34563456435634563" id="" name="">
+                        <input class="field-text__input" type="number" placeholder="34563456435634563" id="" name="">
                       </span>
                     </label>
                     <label class="field-text">
@@ -140,13 +154,13 @@
                     <label class="field-text">
                       <span class="field-text__name">Телефон*</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="+7(951) 152 13 53" id="" name="">
+                        <input class="field-text__input" type="tel" placeholder="+7(951) 152 13 53" id="phone" name="">
                       </span>
                     </label>
                     <label class="field-text">
                       <span class="field-text__name">E-mail</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="antongorodecky@gmail.com" id="" name="">
+                        <input class="field-text__input" type="email" placeholder="antongorodecky@gmail.com" id="" name="">
                       </span>
                     </label>
                   </div>
@@ -201,21 +215,21 @@
                       <div class="field-file__name">ИНН</div>
                       <label class="field-file__input-wrap">
                         <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
-                        <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+                        <div class="field-file__name-text" data-button-text="Выбрать файл">Ничего не выбрано</div>
                       </label>
                     </div>
                     <div class="field-file">
                       <div class="field-file__name">ОГРН</div>
                       <label class="field-file__input-wrap">
                         <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
-                        <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+                        <div class="field-file__name-text" data-button-text="Выбрать файл">Ничего не выбрано</div>
                       </label>
                     </div>
                     <div class="field-file">
                       <div class="field-file__name">ЕГРИП</div>
                       <label class="field-file__input-wrap">
                         <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
-                        <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+                        <div class="field-file__name-text" data-button-text="Выбрать файл">Ничего не выбрано</div>
                       </label>
                     </div>
                   </div>
@@ -224,21 +238,21 @@
                       <div class="field-file__name">1-ая страница паспорта</div>
                       <label class="field-file__input-wrap">
                         <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
-                        <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+                        <div class="field-file__name-text" data-button-text="Выбрать файл">Ничего не выбрано</div>
                       </label>
                     </div>
                     <div class="field-file">
                       <div class="field-file__name">2-ая страница паспорта</div>
                       <label class="field-file__input-wrap">
                         <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
-                        <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+                        <div class="field-file__name-text" data-button-text="Выбрать файл">Ничего не выбрано</div>
                       </label>
                     </div>
                     <div class="field-file">
                       <div class="field-file__name">3-ая страница паспорта</div>
                       <label class="field-file__input-wrap">
                         <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
-                        <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+                        <div class="field-file__name-text" data-button-text="Выбрать файл">Ничего не выбрано</div>
                       </label>
                     </div>
                   </div>
@@ -507,6 +521,7 @@
                           </tr>
                         </tbody>
                       </table>
+                      <div class="table--orders-more"><a class="btn btn--gray-light btn--inherit-text" href="#">Показать еще</a></div>
                     </div>
                   </div>
                 </div>

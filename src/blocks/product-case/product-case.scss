@@ -92,6 +92,7 @@
 
     &--action {
       display: flex;
+      flex-wrap: wrap;
 
       .add-basket {
         margin-right: 20px;
@@ -118,9 +119,16 @@
     }
 
     &--files {
-      a {
-        font-size: $font-size--small;
-        margin-right: 20px;
+      display: flex;
+
+      .btn-icon + .btn-icon {
+        margin-left: 20px;
+      }
+
+      .btn-icon {
+        .icon {
+          fill: $color-main;
+        }
       }
     }
   }

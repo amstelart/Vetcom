@@ -18,7 +18,7 @@
 
     #{$block-name}__part {
       margin-bottom: 10px;
-      
+
       &--sort {
         margin-right: 30px;
       }
@@ -44,6 +44,26 @@
         font-size: 14px;
         color: #aaaaaa;
         white-space: nowrap;
+      }
+    }
+  }
+
+  &--subs {
+    flex-wrap: wrap;
+
+    #{$block-name}__part {
+
+      margin-bottom: 15px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      &--text {
+        font-size: 14px;
+        color: #aaaaaa;
+        white-space: nowrap;
+        flex-grow: 1;
       }
     }
   }

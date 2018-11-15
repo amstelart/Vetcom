@@ -23,8 +23,11 @@
   }
 
   &__item-content {
-    min-width: 270px;
-    width: 270px;
+
+    // @media (min-width: $screen-md) {
+    //   min-width: 270px;
+    //   width: 270px;
+    // }
   }
 
 }

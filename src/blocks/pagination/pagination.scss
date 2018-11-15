@@ -18,6 +18,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
   justify-content: center;
   margin-top: $line-height;
   margin-bottom: $line-height * 2;
+  position: relative;
 
   &__item {
     display: block;
@@ -52,6 +53,22 @@ $border-color:                hsl(0, 0%, 60%) !default;
   &__nav {
     padding: 0.5em;
     font-size: 14px;
-    // display: inline-flex;
+    text-decoration: none;
+    .icon {
+      vertical-align: middle;
+    }
+
+    @media (max-width: $screen-sm) {
+      position: absolute;
+      bottom: -40px;
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
   }
 }

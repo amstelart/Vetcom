@@ -67,6 +67,17 @@
     }
   }
 
+  &--promocode {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+
+    .field-text__input,
+    .btn {
+      padding: 0.6em 1.4em;
+      font-size: 1em;
+    }
+  }
+
   // .field-file {               // обычно, не участвует в группировке
 
   //   input {

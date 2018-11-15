@@ -7,14 +7,12 @@
   $block-name:                &; // #{$block-name}__element
 
   &__wrap {
-    @include row;
-
-    @media (min-width: $screen-xl) {
-      #{$block-name} {
-        @include col();
-        @include col(lg, 3);
-      }
-    }
+    // @include row;
+    //
+    // #{$block-name} {
+    //   @include col();
+    //   @include col(xl, 3);
+    // }
 
   }
 
@@ -38,12 +36,18 @@
   &__image {
     a {
       display: block;
+      text-align: center;
+    }
+
+    img {
+      margin: auto;
     }
   }
 
   &__name {
     a {
       display: block;
+      text-decoration: none;
     }
   }
 
@@ -90,6 +94,9 @@
 
   &--inline {
 
+    &:after {
+      display: none;
+    }
 
     @media (min-width: $screen-lg) {
 
@@ -100,7 +107,7 @@
       &:last-child {
         border-bottom: 1px solid $border-color;
       }
-      
+
       #{$block-name}__inner {
         display: flex;
         padding-left: 0;

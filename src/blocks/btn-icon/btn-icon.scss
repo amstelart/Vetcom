@@ -89,17 +89,17 @@
     }
 
     #{$block-name}__text {
-      display: none;
+      display: block;
       position: static;
       height: 40px;
       line-height: 40px;
       text-align: center;
       font-weight: 500;
-      font-size: $font-size--small;
+      font-size: 12px;
       white-space: nowrap;
 
-      @media (min-width: $screen-xl) {
-        display: block;
+      @media (max-width: $screen-sm) {
+        font-size: 10px;
       }
     }
   }

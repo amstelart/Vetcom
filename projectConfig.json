@@ -91,7 +91,18 @@
     "aside-filter": [],
     "catalog-nav": [],
     "table-price-category": [],
-    "your-price-category": []
+    "your-price-category": [],
+    "about": [],
+    "product-tab-carousel": [],
+    "orientation-card": [],
+    "catalog-filter": [],
+    "layout-basket": [],
+    "basket-stock": [],
+    "basket-order": [],
+    "subs-informer": [],
+    "layout-subs": [],
+    "subs-terms": [],
+    "catalog-fw-cards": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

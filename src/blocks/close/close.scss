@@ -45,4 +45,19 @@ $toggler-part-bg-color:       #000 !default;
       transform: rotate3d(0, 0, 1, -45deg);
     }
   }
+
+  &--small {
+    width: 15px;
+    height: 15px;
+    z-index: 0;
+
+    > span {
+
+      &:before,
+      &:after {
+        height: 2px;
+        background: #444;
+      }
+    }
+  }
 }

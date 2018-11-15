@@ -1,0 +1,36 @@
+// В этом файле должны быть стили для БЭМ-блока orientation-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.orientation-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 6px;
+    outline: none;
+    color: currentColor;
+    cursor: pointer;
+
+    &.active {
+      svg {
+        fill: $color-main;
+      }
+    }
+
+    svg {
+      fill: #c3c3c3;
+      transition: fill 0.3s;
+    }
+  }
+
+}

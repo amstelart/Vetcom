@@ -1,0 +1,79 @@
+// В этом файле должны быть стили для БЭМ-блока catalog-subs-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.catalog-fw-cards {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+
+  .product-card {
+    @include col();
+    @include col(sm, 12);
+    @include col(md, 6);
+    @include col(lg, 4);
+    @include col(xl, 3);
+
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+
+    border-right: 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 1px;
+      height: calc(100% - 20px);
+      background: #dbdbdb;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      &:nth-child(4n) {
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $screen-lg) and (max-width: $screen-xl) {
+      &:nth-child(3n) {
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $screen-md) and (max-width: $screen-lg) {
+      &:nth-child(2n) {
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    @media only screen and (min-width: $screen-sm) and (max-width: $screen-md) {
+      &:after {
+        display: none;
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &--inline {
+    .product-card {
+      @include col();
+      @include col(lg, 12);
+      @include col(xl, 12);
+    }
+  }
+
+}

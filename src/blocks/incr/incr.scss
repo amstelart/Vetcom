@@ -13,6 +13,21 @@
 
   &__val {
     padding: 0.5em;
+    min-width: 45px;
+    max-width: 50px;
+    text-align: center;
+
+    touch-action: manipulation;
+    background: transparent;
+    font-size: 1em;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0;
+    border: none;
+    appearance: textfield;
+    outline: none;
   }
 
   &__nav {
@@ -34,6 +49,10 @@
     overflow: hidden;
     color: #000;
     border-radius: 6px;
+
+    #{$block-name}__val {
+      color: #000;
+    }
 
     #{$block-name}__nav {
       color: #a7a7a7;
