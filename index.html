@@ -45,13 +45,14 @@
 
 <body>
 
-  <div style="position: fixed;z-index:999;right:0;bottom:0;background: #fff;padding: 0.5em">
+  <div style="position: fixed;z-index:999;right:0;bottom:0;background: #fff;padding: 0.5em; font-size: 14px;">
     <a href="#modal-login" data-toggle="modal">login</a>,
     <a href="#modal-login-2" data-toggle="modal">login-2</a>,
     <a href="#modal-review" data-toggle="modal">review</a>,
     <a href="#modal-price-category" data-toggle="modal">price-category</a>,
     <a href="#modal-call" data-toggle="modal">call</a>,
-    <a href="#modal-feedback" data-toggle="modal">feedback</a>
+    <a href="#modal-feedback" data-toggle="modal">feedback</a>,
+    <a href="#modal-add-basket" data-toggle="modal">add-basket</a>
   </div>
 
   <div class="page__inner" id="my-wrapper">
@@ -2827,6 +2828,48 @@
           </div>
           <p class="modal__caption-text">Сумма заказов в прошлом месяце: 72 500 руб.</p>
           <p class="modal__caption-text">Сумма заказов в текущем месяце: 52 500 руб.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-add-basket" class="modal modal--add-basket" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Товар добавлен в корзину</h4>
+        </div>
+        <div class="modal__body">
+          <div class="product-card--modal">
+            <div class="product-card__inner">
+              <div class="product-card__image">
+                <img src="img/product-image.png" alt="">
+              </div>
+              <div class="product-card__body">
+                <h5 class="product-card__name"><a href="page-product.html" tabindex="0">Сухой корм PRO PLAN Sterilised</a></h5>
+                <ul class="product-card__info">
+                  <li>Артикул: 1234567</li>
+                  <li>В наличии: 520 шт.</li>
+                </ul>
+                <div class="product-card__price">
+                  <div class="price-delivery">1050 <span class="rub">a</span></div>
+                  <div class="price-pickup">
+                    <div class="price-pickup__text">
+                      900 <span class="rub">a</span>
+                    </div>
+                    <span class="tooltip">
+                      <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом" tabindex="0">Подсказка</button>
+                      <span role="status"></span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn btn--main">Перейти в корзину</a>
+            <a href="#" class="btn btn--gray">Продолжить покупки</a>
+          </div>
         </div>
       </div>
     </div>
