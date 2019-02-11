@@ -1247,6 +1247,93 @@
       </div>
     </div>
   </div>
+
+  <div id="modal-subs" class="modal modal--subs" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Изменить условия</h4>
+          <!-- <p class="modal__text text-center">Мы оперативно отреагируем на ваше сообщение</p> -->
+        </div>
+        <div class="modal__body">
+          <div class="tabs tabs--modal">
+            <ul class="tabs__links" role="tablist">
+              <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+                <a href="#subs-tab-01" class="tabs__link" data-toggle="tab" role="tab">Контактные данные</a>
+              </li>
+              <li class="tabs__link-wrap" role="presentation">
+                <span data-target="#subs-tab-02" class="tabs__link" data-toggle="tab" role="tab">Доставка</span>
+              </li>
+            </ul>
+
+            <div class="tabs__content-wrapper">
+              <div class="tabs__content-item tabs__content-item--active" id="subs-tab-01" role="tabpanel">
+                <form class="form form--modal" action="">
+                  <label class="field-text">
+                    <span class="field-text__name">ФИО контактного лица</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" name="" value="Синицин Игорь Владимирович">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__name">Контактный телефон</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input phone-mask" placeholder="+7 (___) __-__-___" type="tel" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                      <span class="field-text__name">ФИО контактного лица</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" name="" value="ул. Косухина д.26 кв.60">
+                      </span>
+                    </label>
+                  <div class="field-actions">
+                    <button class="btn btn--main btn--block">Далее</button>
+                  </div>
+                </form>
+              </div>
+              <div class="tabs__content-item" id="subs-tab-02" role="tabpanel">
+                <form class="form form--modal" action="">
+                  <label class="field-select">
+                    <div class="field-select__name">Переодичность доставки</div>
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>Раз в месяц</option>
+                        <option>Раз в месяц</option>
+                        <option>Раз в месяц</option>
+                        <option>Раз в месяц</option>
+                        <option>Раз в месяц</option>
+                      </select>
+                    </div>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__name">Дата доставки</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input field-text__input--date" value="11 числа" type="text" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__name">Время доставки</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" value="antongorodecky@gmail.com" name="">
+                    </span>
+                  </label>
+                  <div class="subs-form-info">
+                    <div class="subs-form-info__price">Сумма в месяц: <span>5500 <span class="rub">a</span></span></div>
+                    <div class="subs-form-info__val">Количество товаров: 25</div>
+                  </div>
+                  <div class="field-actions">
+                    <button class="btn btn--main btn--block">Сохранить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/script.min.js"></script>
 
 </body>
