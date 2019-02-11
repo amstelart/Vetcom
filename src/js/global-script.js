@@ -13,6 +13,7 @@ $( document ).ready(function() {
 
   // Маски для полей ввода
   $("#phone").mask("+7 (999) 99-99-999");
+  $(".phone-mask").mask("+7 (999) 99-99-999");
 
   $('.main-slider').slick({
     slidesToShow: 1,

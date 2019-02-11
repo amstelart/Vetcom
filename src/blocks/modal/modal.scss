@@ -63,7 +63,11 @@ $z-index-modal:               100 !default;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
-    padding: 30px 50px;
+    padding: 30px 15px;
+
+    @media (min-width: $screen-lg) {
+      padding: 30px 50px;
+    }
   }
 
   &__header {
@@ -80,8 +84,12 @@ $z-index-modal:               100 !default;
     font-weight: 400;
     font-family: 'Rubik';
     text-align: center;
-    font-size: 36px;
+    font-size: 22px;
     color: currentColor;
+
+    @media (min-width: $screen-lg) {
+      font-size: 36px;
+    }
   }
 
   &__close {
@@ -182,6 +190,88 @@ $z-index-modal:               100 !default;
     #{$block-name}__footer {
       background: #f7f3ed;
       padding: 2em;
+    }
+  }
+
+  &--call {
+    .modal__text {
+      font-size: 14px;
+    }
+    .field-actions {
+      .btn {
+        text-transform: none;
+        padding: 0.85em 1.4em;
+        font-size: 16px;
+      }
+    }
+
+    .field-checkbox__name-text,
+    .field-checkbox__name a {
+      color: #999999;
+    }
+  }
+
+  &--feedback {
+    .modal__text {
+      font-size: 14px;
+    }
+    .field-actions {
+      .btn {
+        text-transform: none;
+        padding: 0.8em 1.4em;
+        font-size: 16px;
+      }
+    }
+
+    .field-checkbox__name-text,
+    .field-checkbox__name a {
+      color: #999999;
+    }
+
+  }
+
+  &--add-basket {
+    #{$block-name}__title {
+      text-align: left;
+    }
+    #{$block-name}__dialog {
+
+      @media (min-width: $screen-lg) {
+        width: 750px;
+        height: auto;
+      }
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+
+      .btn {
+        margin-right: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--subs {
+    .subs-form-info {
+      margin-bottom: 20px;
+
+      &__price {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 4px;
+        span {
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+
+      &__val {
+        font-size: 16px;
+        color: #aaaaaa;
+        line-height: 1.3;
+      }
     }
   }
 }

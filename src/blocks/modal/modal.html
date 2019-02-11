@@ -206,3 +206,214 @@
     </div>
   </div>
 </div>
+
+<div id="modal-add-basket" class="modal modal--add-basket" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Товар добавлен в корзину</h4>
+      </div>
+      <div class="modal__body">
+        <div class="product-card--modal">
+          <div class="product-card__inner">
+            <div class="product-card__image">
+              <img src="img/product-image.png" alt="">
+            </div>
+            <div class="product-card__body">
+              <h5 class="product-card__name"><a href="page-product.html" tabindex="0">Сухой корм PRO PLAN Sterilised</a></h5>
+              <ul class="product-card__info">
+                <li>Артикул: 1234567</li>
+                <li>В наличии: 520 шт.</li>
+              </ul>
+              <div class="product-card__price">
+                <div class="price-delivery">1050 <span class="rub">a</span></div>
+                <div class="price-pickup">
+                  <div class="price-pickup__text">
+                    900 <span class="rub">a</span>
+                  </div>
+                  <span class="tooltip">
+                    <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом" tabindex="0">Подсказка</button>
+                    <span role="status"></span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn btn--main">Перейти в корзину</a>
+          <a href="#" class="btn btn--gray">Продолжить покупки</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-call" class="modal modal--call" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Заказать звонок</h4>
+        <p class="modal__text text-center">Наши менеджеры перезвонят вам в короткий срок</p>
+      </div>
+      <div class="modal__body">
+        <form class="form" action="">
+          <label class="field-text">
+            <span class="field-text__name">Имя</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" name="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Телефон</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input phone-mask" placeholder="+7 (___) __-__-___" type="tel" name="">
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main btn--block">Заказать звонок</button>
+          </div>
+          <div class="field-checkbox">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" id="" name="" checked="">
+              <span class="field-checkbox__name-text">Я согласен с</span>
+              <a href="#">условиями обработки данных</a>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-feedback" class="modal modal--feedback" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Обратная связь</h4>
+        <p class="modal__text text-center">Мы оперативно отреагируем на ваше сообщение</p>
+      </div>
+      <div class="modal__body">
+        <form class="form" action="">
+          <label class="field-text">
+            <span class="field-text__name">Имя</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" name="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Телефон</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input phone-mask" placeholder="+7 (___) __-__-___" type="tel" name="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Сообщение</span>
+            <span class="field-text__input-wrap">
+              <textarea class="field-text__input" rows="6"></textarea>
+            </span>
+          </label>
+          <div class="field-actions">
+            <button class="btn btn--main btn--block">Заказать звонок</button>
+          </div>
+          <div class="field-checkbox">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" id="" name="" checked="">
+              <span class="field-checkbox__name-text">Я согласен с</span>
+              <a href="#">условиями обработки данных</a>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modal-subs" class="modal modal--subs" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Изменить условия</h4>
+        <!-- <p class="modal__text text-center">Мы оперативно отреагируем на ваше сообщение</p> -->
+      </div>
+      <div class="modal__body">
+        <div class="tabs tabs--modal">
+          <ul class="tabs__links" role="tablist">
+            <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+              <a href="#subs-tab-01" class="tabs__link" data-toggle="tab" role="tab">Контактные данные</a>
+            </li>
+            <li class="tabs__link-wrap" role="presentation">
+              <span data-target="#subs-tab-02" class="tabs__link" data-toggle="tab" role="tab">Доставка</span>
+            </li>
+          </ul>
+
+          <div class="tabs__content-wrapper">
+            <div class="tabs__content-item tabs__content-item--active" id="subs-tab-01" role="tabpanel">
+              <form class="form form--modal" action="">
+                <label class="field-text">
+                  <span class="field-text__name">ФИО контактного лица</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" name="" value="Синицин Игорь Владимирович">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Контактный телефон</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input phone-mask" placeholder="+7 (___) __-__-___" type="tel" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                    <span class="field-text__name">ФИО контактного лица</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" name="" value="ул. Косухина д.26 кв.60">
+                    </span>
+                  </label>
+                <div class="field-actions">
+                  <button class="btn btn--main btn--block">Далее</button>
+                </div>
+              </form>
+            </div>
+            <div class="tabs__content-item" id="subs-tab-02" role="tabpanel">
+              <form class="form form--modal" action="">
+                <label class="field-select">
+                  <div class="field-select__name">Переодичность доставки</div>
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id="" name="">
+                      <option>Раз в месяц</option>
+                      <option>Раз в месяц</option>
+                      <option>Раз в месяц</option>
+                      <option>Раз в месяц</option>
+                      <option>Раз в месяц</option>
+                    </select>
+                  </div>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Дата доставки</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input field-text__input--date" value="11 числа" type="text" name="">
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Время доставки</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" value="antongorodecky@gmail.com" name="">
+                  </span>
+                </label>
+                <div class="subs-form-info">
+                  <div class="subs-form-info__price">Сумма в месяц: <span>5500 <span class="rub">a</span></span></div>
+                  <div class="subs-form-info__val">Количество товаров: 25</div>
+                </div>
+                <div class="field-actions">
+                  <button class="btn btn--main btn--block">Сохранить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

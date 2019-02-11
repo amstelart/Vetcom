@@ -129,6 +129,16 @@
         justify-content: center;
       }
     }
+  }
 
+  &--modal {
+    #{$block-name}__inner {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #{$block-name}__image {
+      max-width: 200px;
+    }
   }
 }

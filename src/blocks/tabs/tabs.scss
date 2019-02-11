@@ -87,6 +87,42 @@ $field-padding-horizontal:    0.7em !default;
     }
   }
 
+  &--modal {
+    #{$block-name}__links {
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    #{$block-name}__link-wrap {
+      border: none;
+      background: #fff;
+      border-bottom: 2px solid #d7d7d7;
+      min-width: 50%;
+
+      &--active {
+        border-color: $color-main;
+
+        #{$block-name}__link {
+          color: inherit;
+          background-color: #fff;
+        }
+      }
+    }
+
+    #{$block-name}__link {
+      border: none;
+      background: #fff;
+      color: #d7d7d7;
+      padding: 0.6em 0.5em;
+      font-family: 'Rubik';
+      font-size: 14px;
+
+      @media (min-width: $screen-lg) {
+        font-size: 16px;
+      }
+    }
+  }
+
   &--carousel {
 
     .tabs__content-item {
