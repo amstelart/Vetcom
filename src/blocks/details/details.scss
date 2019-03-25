@@ -6,10 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  max-width: 845px;
 
   &__item {
     display: flex;
+    flex-wrap: wrap;
     padding: 8px 0;
 
     &:not(:last-child) {
@@ -20,6 +20,7 @@
   &__item-title {
     flex-grow: 1;
     font-weight: 600;
+    margin-right: 15px;
   }
 
   &__item-content {
