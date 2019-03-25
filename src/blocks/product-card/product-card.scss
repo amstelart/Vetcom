@@ -25,12 +25,12 @@
   &__inner {
     padding: 20px;
     position: relative;
+  }
 
-    .label {
-      position: absolute;
-      left: 20px;
-      top: 0;
-    }
+  &__lebels {
+    position: absolute;
+    left: 20px;
+    top: 0;
   }
 
   &__image {

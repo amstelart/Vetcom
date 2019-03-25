@@ -31,15 +31,17 @@
       }
     }
 
-    > span,
     > a {
       padding: 1em 2em 1em 0;
       display: block;
       cursor: pointer;
     }
+  }
 
-    span {
+  li.sub-menu {
+    > a {
       position: relative;
+      text-decoration: none;
 
       &:after {
         content: '';
@@ -55,11 +57,18 @@
     }
 
     &.active {
-      span {
+      > a {
         font-weight: 500;
+        color: #000;
+
+        &:hover,
+        &:focus {
+          color: #000;
+        }
 
         &:after {
           transform: rotate(225deg);
+          top: 1.5em;
         }
       }
     }

@@ -11,6 +11,12 @@ $( document ).ready(function() {
      }
   });
 
+  $('.sub-menu ul').hide();
+  $(".sub-menu a").click(function () {
+  	$(this).parent(".sub-menu").children("ul").slideToggle("100");
+  	$(this).parent(".sub-menu").toggleClass("active");
+  });
+
   // Маски для полей ввода
   $("#phone").mask("+7 (999) 99-99-999");
   $(".phone-mask").mask("+7 (999) 99-99-999");
@@ -140,6 +146,45 @@ $( document ).ready(function() {
           slidesToScroll: 1,
           infinite: true,
           arrows: false
+        }
+      }
+    ]
+  });
+
+  $('.compare-carousel').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: true,
+    dots: false,
+    centerMode: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
         }
       }
     ]
