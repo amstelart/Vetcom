@@ -153,6 +153,7 @@ $( document ).ready(function() {
 
   $('.compare-carousel').slick({
     slidesToShow: 4,
+    autoplay: false,
     slidesToScroll: 1,
     infinite: false,
     arrows: true,
