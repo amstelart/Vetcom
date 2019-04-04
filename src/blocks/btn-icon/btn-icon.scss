@@ -13,11 +13,9 @@
     transition: fill $transition-time;
   }
 
-  &:hover,
-  &:focus {
-
+  &:hover {
     svg {
-      fill: #000;
+      fill: darken(#c3c3c3, 15%);
     }
   }
 
