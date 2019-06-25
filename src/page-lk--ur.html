@@ -19,7 +19,7 @@
       <main class="page__main-content" role="main">
 
         <div class="main-container">
-          <section class="checkout">
+          <section class="checkout checkout--ur">
             <h1 class="page-title">Личный кабинет</h1>
             <form action="" class="checkout__wrap">
               <section class="checkout__part">
@@ -50,7 +50,14 @@
                     </div>
                   </div>
                 </div>
-                <h2 class="checkout__part-title">Личная информация</h2>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col-2">
+                    <div class="checkout__part-title-wrap">
+                      <h2 class="checkout__part-title">Личная информация</h2>
+                      <p>Номер договора: 56135</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="checkout__part-wrap">
                   <div class="checkout__part-col">
                     <label class="field-select">
@@ -139,6 +146,12 @@
                         <input class="field-text__input" type="text" placeholder="Ленина 12" id="" name="">
                       </span>
                     </label>
+                    <div class="field-checkbox">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">Фактический адрес соападает с юридическим</span>
+                      </label>
+                    </div>
                     <label class="field-text">
                       <span class="field-text__name">Физический адрес</span>
                       <span class="field-text__input-wrap">
@@ -209,6 +222,35 @@
               </section>
               <section class="checkout__part">
                 <h2 class="checkout__part-title">Документы</h2>
+                <h4 class="checkout__part-sm-title">Добавленные документы</h4>
+                <div class="checkout__part-wrap">
+                  <div class="checkout__part-col-2">
+                    <p class="alert alert--checkout">
+                      Вы пока не добавили ни одного документа
+                    </p>
+                    <div class="docs-group">
+                      <div class="docs-item">
+                        <div class="docs-item__body">
+                          <span class="docs-item__name"><b>ИНН —</b> myinn.jpg</span>
+                        </div>
+                        <button class="btn btn--main docs-item__del">Удалить</button>
+                      </div>
+                      <div class="docs-item">
+                        <div class="docs-item__body">
+                          <span class="docs-item__name"><b>ОГРН —</b> myinn.jpg</span>
+                        </div>
+                        <button class="btn btn--main docs-item__del">Удалить</button>
+                      </div>
+                      <div class="docs-item">
+                        <div class="docs-item__body">
+                          <span class="docs-item__name"><b>ИНН —</b> myinn.jpg</span>
+                        </div>
+                        <button class="btn btn--main docs-item__del">Удалить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="checkout__part-sm-title">Добавить документы</h4>
                 <div class="checkout__part-wrap">
                   <div class="checkout__part-col">
                     <div class="field-file">

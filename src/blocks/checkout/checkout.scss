@@ -33,6 +33,29 @@
     @include col(lg, 8);
   }
 
+  &__part-title-wrap {
+    display: flex;
+    align-items: flex-end;
+
+    @media (min-width: $screen-md) {
+      
+    }
+
+    #{$block-name}__part-title {
+      margin-right: auto;
+    }
+
+    p {
+      margin-bottom: 1em;
+      color: #12283c;
+      font-size: 14px;
+
+      @media (min-width: $screen-md) {
+        font-size: 18px;
+      }
+    }
+  }
+
   &__part-title {
     font-size: 21px;
     font-weight: 400;

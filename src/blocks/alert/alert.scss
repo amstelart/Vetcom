@@ -82,4 +82,11 @@ $border-radius:               3px !default;
     border: 1px solid lighten($color-warning, 20%);
     color: $text-color;
   }
+
+  &--checkout {
+    background-color: #ededed;
+    border-color: #ededed;
+    color: #12283c;
+    font-size: 16px;
+  }
 }

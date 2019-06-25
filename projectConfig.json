@@ -103,7 +103,8 @@
     "layout-subs": [],
     "subs-terms": [],
     "catalog-fw-cards": [],
-    "pets-group": []
+    "pets-group": [],
+    "docs-group": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
