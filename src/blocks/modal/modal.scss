@@ -274,6 +274,22 @@ $z-index-modal:               100 !default;
       }
     }
   }
+
+  &--subs-info {
+    
+    #{$block-name}__dialog {
+
+      @media (min-width: $screen-lg) {
+        width: 750px;
+        height: auto;
+      }
+    }
+
+    #{$block-name}__title {
+      text-align: left;
+      font-size: 30px;
+    }
+  }
 }
 
 
