@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <div class="layout-catalog layout-catalog--no-sidebar">
+            <!-- catalog-main -->
+            <div class="layout-catalog__main">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item"><span>Товары для кошек</span></li>
+              </ul>
+              <h1 class="page-title">Товары для кошек</h1>
+              <div class="catalog-filter mb60">
+                <form class="filter-wrapper">
+                  <div class="filter filter--catalog">
+                    <div class="filter__part filter__part--text">315 товаров</div>
+                    <div class="filter__part filter__part--sort">
+                      <label class="field-select field-select--inline field-select--filter">
+                        <div class="field-select__name">Сортировать:</div>
+                        <div class="field-select__select-wrap">
+                          <select class="field-select__select" id="" name="">
+                            <option>По популярности</option>
+                            <option>Значение 2</option>
+                            <option>Значение 3</option>
+                            <option>Значение 10</option>
+                          </select>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="filter__part filter__part--sort">
+                      <label class="field-select field-select--inline field-select--filter">
+                        <div class="field-select__name">Выводить по:</div>
+                        <div class="field-select__select-wrap">
+                          <select class="field-select__select" id="" name="">
+                            <option>9 товаров</option>
+                            <option>18 товаров</option>
+                            <option>36 товаров</option>
+                          </select>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="orientation-card">
+                  <a class="orientation-card__btn active" href="page-favorite.html">
+                    <svg class="icon" width="22" height="22">
+                      <use xlink:href="img/sprite-svg.svg#orv-icon"></use>
+                    </svg>
+                  </a>
+                  <a class="orientation-card__btn" href="page-favorite.html">
+                    <svg class="icon" width="22" height="22">
+                      <use xlink:href="img/sprite-svg.svg#orh-icon"></use>
+                    </svg>
+                  </a>
+                </div>
+
+              </div>
+              <div class="catalog-cards">
+                <div class="product-card">
+                  <div class="product-card__inner">
+                    <div class="product-card__lebels">
+                      <div class="label label--sale">20%</div>
+                    </div>
+                    <div class="product-card__image">
+                      <a href="page-product.html">
+                        <img src="img/product-image.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-card__body">
+                      <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
+                      <ul class="product-card__info">
+                        <li>Артикул: 1234567</li>
+                        <li>В наличии: 520 шт.</li>
+                      </ul>
+                      <div class="product-card__price">
+                        <div class="price-delivery">1050 <span class="rub">a</span></div>
+                        <div class="price-pickup">
+                          <div class="price-pickup__text">
+                            900 <span class="rub">a</span>
+                          </div>
+                          <span class="tooltip">
+                            <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом">Подсказка</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__basket">
+                      <div class="add-basket">
+                        <button class="btn btn--main">в корзину</button>
+                        <div class="incr">
+                          <div class="incr__minus incr__nav">
+                            <span>-</span>
+                          </div>
+                          <div class="incr__val">
+                            <span>2</span>
+                          </div>
+                          <div class="incr__plus incr__nav">
+                            <span>+</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__action">
+                      <div class="product-card__subs">
+                        <a href="#">В подписку</a>
+                        <span class="tooltip">
+                          <button class="tooltip__btn" aria-label="more info" data-tooltip-content="Добавить товар в подписку">Подсказка</button>
+                        </span>
+                      </div>
+
+                      <div class="product-card__links">
+                        <a class="btn-icon btn-icon--real-btn" href="page-favorite.html">
+                          <svg class="icon" width="18" height="16">
+                            <use xlink:href="img/sprite-svg.svg#favorite"></use>
+                          </svg>
+                        </a>
+                        <a class="btn-icon btn-icon--real-btn" href="page-compare.html">
+                          <svg class="icon" width="19" height="17">
+                            <use xlink:href="img/sprite-svg.svg#compare"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__inner">
+                    <div class="product-card__lebels">
+                      <div class="label label--hit">Хит</div>
+                      <div class="label label--new">Новинка</div>
+                    </div>
+                    <div class="product-card__image">
+                      <a href="page-product.html">
+                        <img src="img/product-image.png" alt="">
+                      </a>
+                    </div>
+                    <div class="product-card__body">
+                      <h5 class="product-card__name"><a href="page-product.html">Сухой корм PRO PLAN Sterilised</a></h5>
+                      <ul class="product-card__info">
+                        <li>Артикул: 1234567</li>
+                        <li class="color-red">Нет в наличии</li>
+                      </ul>
+                      <div class="product-card__price">
+                        <div class="price-delivery">1050 <span class="rub">a</span></div>
+                        <div class="price-pickup">
+                          <div class="price-pickup__text">
+                            900 <span class="rub">a</span>
+                          </div>
+                          <span class="tooltip">
+                            <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом">Подсказка</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__basket">
+                      <div class="add-basket">
+                        <button class="btn btn--main">в корзину</button>
+                        <div class="incr">
+                          <div class="incr__minus incr__nav">
+                            <span>-</span>
+                          </div>
+                          <div class="incr__val">
+                            <span>2</span>
+                          </div>
+                          <div class="incr__plus incr__nav">
+                            <span>+</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product-card__action">
+                      <div class="product-card__subs">
+                        <a href="#">В подписку</a>
+                        <span class="tooltip">
+                          <button class="tooltip__btn" aria-label="more info" data-tooltip-content="Добавить товар в подписку">Подсказка</button>
+                        </span>
+                      </div>
+
+                      <div class="product-card__links">
+                        <a class="btn-icon btn-icon--real-btn" href="page-favorite.html">
+                          <svg class="icon" width="18" height="16">
+                            <use xlink:href="img/sprite-svg.svg#favorite"></use>
+                          </svg>
+                        </a>
+                        <a class="btn-icon btn-icon--real-btn" href="page-compare.html">
+                          <svg class="icon" width="19" height="17">
+                            <use xlink:href="img/sprite-svg.svg#compare"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                @@include('blocks/product-card/product-card.html')
+
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+                @@include('blocks/product-card/product-card.html')
+              </div>
+              @@include('blocks/pagination/pagination.html')
+              <p>Текстовый блок для описания категории. Мы — сервисная компания. Наша деятельность направлена на оптимальное обслуживание собственников животных. Для этого мы подбираем опытных профессиональных сотрудников, имеем собственные склады в Курске и Москве, содержим специализированный автотранспорт и розничную сеть. Ветеринарная Компания — это производство продукта под названием: ответственный сервис по снабжению ветеринарными препаратами, зоотоварами и кормами.</p>
+            </div>
+            <!-- ./catalog-main -->
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/modal/modal.html')
+  @@include('_include/page_bottom.html')
+  <script>
+    // фильтр цены
+    var keypressSlider = document.getElementById('keypress');
+    var input0 = document.getElementById('input-with-keypress-0');
+    var input1 = document.getElementById('input-with-keypress-1');
+    var inputs = [input0, input1];
+
+    noUiSlider.create(keypressSlider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': [0],
+            '10%': [10, 10],
+            '50%': [80, 50],
+            '80%': 150,
+            'max': 200
+        }
+    });
+
+    keypressSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+  </script>
+</body>
+</html>

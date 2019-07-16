@@ -38,4 +38,44 @@
       margin-left: auto;
     }
   }
+
+  &--no-sidebar {
+
+    #{$block-name}__aside {
+      display: none;
+    }
+
+    #{$block-name}__main {
+      @include col(lg, 12);
+    }
+
+    .catalog-cards {
+      .product-card {
+        @include col(xl, 3);
+        @include col(lg, 4);
+
+        @media (min-width: $screen-xl) {
+          &:nth-child(3n) {
+            &:after {
+              display: block;
+            }
+          }
+        }
+
+        @media only screen and (min-width: $screen-lg) and (max-width: $screen-xl) {
+          &:nth-child(2n) {
+            &:after {
+              display: block;
+            }
+          }
+
+          &:nth-child(3n) {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
