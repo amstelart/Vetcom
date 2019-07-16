@@ -12,7 +12,7 @@ $( document ).ready(function() {
   });
 
   $('.sub-menu ul').hide();
-  $(".sub-menu a").click(function () {
+  $(".sub-menu .sub-link").click(function () {
   	$(this).parent(".sub-menu").children("ul").slideToggle("100");
   	$(this).parent(".sub-menu").toggleClass("active");
   });

@@ -31,7 +31,7 @@
       }
     }
 
-    > a {
+    .sub-link {
       padding: 1em 2em 1em 0;
       display: block;
       cursor: pointer;
@@ -39,7 +39,7 @@
   }
 
   li.sub-menu {
-    > a {
+    .sub-link {
       position: relative;
       text-decoration: none;
 
@@ -57,7 +57,7 @@
     }
 
     &.active {
-      > a {
+      .sub-link {
         font-weight: 500;
         color: #000;
 
