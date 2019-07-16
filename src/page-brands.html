@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ветком</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="page__main-content" role="main">
+
+        <div class="main-container">
+          <div class="brand">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><span>Производители</span></li>
+            </ul>
+            <h1 class="page-title">Производители</h1>
+
+            <div class="brand__catalog">
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-01.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-02.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-03.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-04.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-01.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-02.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-03.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-04.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-01.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-02.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-03.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-04.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-01.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-02.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-03.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+              <div class="brand__card">
+                <a href="#" class="brand__card-inner">
+                  <img src="img/brend-logo-04.jpg" alt="" class="brand__card-img">
+                  <span class="brand__card-name">Royal Canin</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/modal/modal.html')
+  @@include('_include/page_bottom.html')
+  <script>
+    // фильтр цены
+    var keypressSlider = document.getElementById('keypress');
+    var input0 = document.getElementById('input-with-keypress-0');
+    var input1 = document.getElementById('input-with-keypress-1');
+    var inputs = [input0, input1];
+
+    noUiSlider.create(keypressSlider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': [0],
+            '10%': [10, 10],
+            '50%': [80, 50],
+            '80%': 150,
+            'max': 200
+        }
+    });
+
+    keypressSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = values[handle];
+    });
+  </script>
+</body>
+</html>

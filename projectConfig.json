@@ -104,7 +104,8 @@
     "subs-terms": [],
     "catalog-fw-cards": [],
     "pets-group": [],
-    "docs-group": []
+    "docs-group": [],
+    "brand": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

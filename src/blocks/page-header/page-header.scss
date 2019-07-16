@@ -150,5 +150,30 @@
 
   &__search {
     max-width: 195px;
+    position: relative;
+
+    .search-form__input {
+      background-image: none;
+    }
+
+    .search-form__btn {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: svg-load('../blocks/search-form/bg-img/search.svg');
+      background-size: 22px 22px;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      background-color: transparent;
+      width: 40px;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }

@@ -29,7 +29,7 @@
         margin-right: 45px;
         margin-bottom: 0;
         padding-top: 29px;
-        width: calc(100% - 275px);
+        width: calc(100% - 290px);
 
         @media (max-width: ($screen-md - 1)) {
           display: block;
@@ -40,7 +40,7 @@
       &--action {
         padding-top: 29px;
         display: inline-flex;
-        width: 275px;
+        width: 290px;
         padding-top: 24px;
         align-items: flex-start;
         flex-wrap: wrap;

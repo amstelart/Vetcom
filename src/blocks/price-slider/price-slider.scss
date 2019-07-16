@@ -33,7 +33,12 @@
     background: white;
     border: 1px solid $color-main;
     top: -10px;
+    left: 0;
     border-radius: 50%;
+
+    &.noUi-handle-upper {
+      left: -22px;
+    }
 
     &:before,
     &:after {
