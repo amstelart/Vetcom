@@ -60,6 +60,11 @@
               display: block;
             }
           }
+          &:nth-child(4n) {
+            &:after {
+              display: none;
+            }
+          }
         }
 
         @media only screen and (min-width: $screen-lg) and (max-width: $screen-xl) {
