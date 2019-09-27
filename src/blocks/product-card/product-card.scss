@@ -119,6 +119,9 @@
           height: 30px;
         }
       }
+      #{$block-name}__image {
+        margin-right: 20px;
+      }
       #{$block-name}__body {
         flex-grow: 1;
       }
@@ -140,6 +143,10 @@
 
     #{$block-name}__image {
       max-width: 200px;
+
+      @media (min-width: $screen-lg) {
+        margin-right: 20px;
+      }
     }
   }
 }
