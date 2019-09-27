@@ -1041,7 +1041,7 @@
       <div class="modal__content">
         <div class="modal__header">
           <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
-          <h4 class="modal__title">Изменить условия</h4>
+          <h4 class="modal__title">Условия подписки</h4>
           <!-- <p class="modal__text text-center">Мы оперативно отреагируем на ваше сообщение</p> -->
         </div>
         <div class="modal__body">
@@ -1098,13 +1098,7 @@
                   <label class="field-text">
                     <span class="field-text__name">Дата доставки</span>
                     <span class="field-text__input-wrap">
-                      <input class="field-text__input field-text__input--date" value="11 числа" type="text" name="">
-                    </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__name">Время доставки</span>
-                    <span class="field-text__input-wrap">
-                      <input class="field-text__input" type="text" value="antongorodecky@gmail.com" name="">
+                      <input class="field-text__input field-text__input--date" type="date" name="">
                     </span>
                   </label>
                   <div class="subs-form-info">
@@ -1134,6 +1128,107 @@
           <p class="modal__text">Вы можете оформить подписку на любые товары. Оформленные товары будут доставляться
           вам в удобный для вас день месяца. Можно удобно управлять подпиской назначая разные
           периоды доставки. Добавить новые товары или изменить старые можно на странице подписки</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-subs-warning" class="modal modal--subs-warning" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        </div>
+        <div class="modal__body">
+          <p class="lead-text">Чтобы добавить товар в подписку вам необходимо зарегистрироваться</p>
+          <div class="btn-group">
+            <a href="#" class="btn btn--main">Регистрация</a>
+            <a href="#" class="btn btn--gray">Продолжить покупки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-subs-tuning" class="modal modal--subs-tuning" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        </div>
+        <div class="modal__body">
+          <p class="lead-text">Товар добавлен в подписку, но вам необходимо настроить условия доставки</p>
+          <div class="product-card--modal">
+            <div class="product-card__inner">
+              <div class="product-card__image">
+                <img src="img/product-image.png" alt="">
+              </div>
+              <div class="product-card__body">
+                <h5 class="product-card__name"><a href="page-product.html" tabindex="0">Сухой корм PRO PLAN Sterilised</a></h5>
+                <ul class="product-card__info">
+                  <li>Артикул: 1234567</li>
+                  <li>В наличии: 520 шт.</li>
+                </ul>
+                <div class="product-card__price">
+                  <div class="price-delivery">1050 <span class="rub">a</span></div>
+                  <div class="price-pickup">
+                    <div class="price-pickup__text">
+                      900 <span class="rub">a</span>
+                    </div>
+                    <span class="tooltip">
+                      <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом" tabindex="0">Подсказка</button>
+                      <span role="status"></span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn btn--main">Настроить условия</a>
+            <a href="#" class="btn btn--gray">Продолжить покупки</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-subs-added" class="modal modal--subs-added" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        </div>
+        <div class="modal__body">
+          <p class="lead-text">Товар добавлен в корзину</p>
+          <div class="product-card--modal">
+            <div class="product-card__inner">
+              <div class="product-card__image">
+                <img src="img/product-image.png" alt="">
+              </div>
+              <div class="product-card__body">
+                <h5 class="product-card__name"><a href="page-product.html" tabindex="0">Сухой корм PRO PLAN Sterilised</a></h5>
+                <ul class="product-card__info">
+                  <li>Артикул: 1234567</li>
+                  <li>В наличии: 520 шт.</li>
+                </ul>
+                <div class="product-card__price">
+                  <div class="price-delivery">1050 <span class="rub">a</span></div>
+                  <div class="price-pickup">
+                    <div class="price-pickup__text">
+                      900 <span class="rub">a</span>
+                    </div>
+                    <span class="tooltip">
+                      <button class="tooltip__btn tooltip__btn--green" aria-label="more info" data-tooltip-content="Цена с самовывозом" tabindex="0">Подсказка</button>
+                      <span role="status"></span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn btn--main">Перейти в корзину</a>
+            <a href="#" class="btn btn--gray">Продолжить покупки</a>
+          </div>
         </div>
       </div>
     </div>
